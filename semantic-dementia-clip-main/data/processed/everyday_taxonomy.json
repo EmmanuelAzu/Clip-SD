@@ -1,0 +1,170 @@
+{
+    "n02123045": {
+        "specific": "Tabby Cat",
+        "coordinate": "Mammal",
+        "superordinate": "Animal",
+        "domain": "Living"
+    },
+    "n02106662": {
+        "specific": "German Shepherd",
+        "coordinate": "Mammal",
+        "superordinate": "Animal",
+        "domain": "Living"
+    },
+    "n02381460": {
+        "specific": "Horse",
+        "coordinate": "Mammal",
+        "superordinate": "Animal",
+        "domain": "Living"
+    },
+    "n01514859": {
+        "specific": "Hen/Chicken",
+        "coordinate": "Birds & Flying",
+        "superordinate": "Animal",
+        "domain": "Living"
+    },
+    "n01847000": {
+        "specific": "Drake/Duck",
+        "coordinate": "Birds & Flying",
+        "superordinate": "Animal",
+        "domain": "Living"
+    },
+    "n01641577": {
+        "specific": "Bullfrog",
+        "coordinate": "Reptile, Fish & Insects",
+        "superordinate": "Animal",
+        "domain": "Living"
+    },
+    "n01443537": {
+        "specific": "Goldfish",
+        "coordinate": "Reptile, Fish & Insects",
+        "superordinate": "Animal",
+        "domain": "Living"
+    },
+    "n02276240": {
+        "specific": "Monarch Butterfly",
+        "coordinate": "Reptile, Fish & Insects",
+        "superordinate": "Animal",
+        "domain": "Living"
+    },
+    "n07749582": {
+        "specific": "Lemon",
+        "coordinate": "Fruits & Vegetables",
+        "superordinate": "Plant & Food",
+        "domain": "Living"
+    },
+    "n07753592": {
+        "specific": "Banana",
+        "coordinate": "Fruits & Vegetables",
+        "superordinate": "Plant & Food",
+        "domain": "Living"
+    },
+    "n07718472": {
+        "specific": "Cucumber",
+        "coordinate": "Fruits & Vegetables",
+        "superordinate": "Plant & Food",
+        "domain": "Living"
+    },
+    "n07873807": {
+        "specific": "Pizza",
+        "coordinate": "Prepared Food & Drinks",
+        "superordinate": "Plant & Food",
+        "domain": "Living"
+    },
+    "n07697313": {
+        "specific": "Cheeseburger",
+        "coordinate": "Prepared Food & Drinks",
+        "superordinate": "Plant & Food",
+        "domain": "Living"
+    },
+    "n07920052": {
+        "specific": "Espresso",
+        "coordinate": "Prepared Food & Drinks",
+        "superordinate": "Plant & Food",
+        "domain": "Living"
+    },
+    "n04099969": {
+        "specific": "Rocking Chair",
+        "coordinate": "Furniture & Decor",
+        "superordinate": "Household & Furniture",
+        "domain": "Non-Living"
+    },
+    "n03201208": {
+        "specific": "Dining Table",
+        "coordinate": "Furniture & Decor",
+        "superordinate": "Household & Furniture",
+        "domain": "Non-Living"
+    },
+    "n03062248": {
+        "specific": "Coffee Mug",
+        "coordinate": "Kitchenware & Utensils",
+        "superordinate": "Household & Furniture",
+        "domain": "Non-Living"
+    },
+    "n04557648": {
+        "specific": "Water Bottle",
+        "coordinate": "Kitchenware & Utensils",
+        "superordinate": "Household & Furniture",
+        "domain": "Non-Living"
+    },
+    "n03045698": {
+        "specific": "Cellular Phone",
+        "coordinate": "Tech & Media",
+        "superordinate": "Electronics & Gear",
+        "domain": "Non-Living"
+    },
+    "n03642806": {
+        "specific": "Laptop Computer",
+        "coordinate": "Tech & Media",
+        "superordinate": "Electronics & Gear",
+        "domain": "Non-Living"
+    },
+    "n04070727": {
+        "specific": "Refrigerator",
+        "coordinate": "Home Appliances",
+        "superordinate": "Electronics & Gear",
+        "domain": "Non-Living"
+    },
+    "n03761084": {
+        "specific": "Microwave Oven",
+        "coordinate": "Home Appliances",
+        "superordinate": "Electronics & Gear",
+        "domain": "Non-Living"
+    },
+    "n03594945": {
+        "specific": "Running Shoe",
+        "coordinate": "Clothing & Apparel",
+        "superordinate": "Wearables & Personal",
+        "domain": "Non-Living"
+    },
+    "n04350905": {
+        "specific": "Suit Coat",
+        "coordinate": "Clothing & Apparel",
+        "superordinate": "Wearables & Personal",
+        "domain": "Non-Living"
+    },
+    "n03977966": {
+        "specific": "Police Van",
+        "coordinate": "Land Vehicles",
+        "superordinate": "Vehicles",
+        "domain": "Non-Living"
+    },
+    "n03791053": {
+        "specific": "Motor Scooter",
+        "coordinate": "Land Vehicles",
+        "superordinate": "Vehicles",
+        "domain": "Non-Living"
+    },
+    "n02691156": {
+        "specific": "Airliner",
+        "coordinate": "Air & Water Transport",
+        "superordinate": "Vehicles",
+        "domain": "Non-Living"
+    },
+    "n02950826": {
+        "specific": "Catamaran",
+        "coordinate": "Air & Water Transport",
+        "superordinate": "Vehicles",
+        "domain": "Non-Living"
+    }
+}

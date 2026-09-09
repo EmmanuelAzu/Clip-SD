@@ -1,0 +1,11 @@
+torch>=2.0.0
+torchvision>=0.15.0
+ftfy
+regex
+tqdm
+pandas
+pillow
+scikit-learn
+seaborn
+matplotlib
+git+https://github.com/openai/CLIP.git

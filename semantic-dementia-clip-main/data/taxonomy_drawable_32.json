@@ -1,0 +1,92 @@
+{
+    "n02123045": {
+        "specific": "Cat",
+        "coordinate": "Mammals",
+        "superordinate": "Animals",
+        "domain": "Living"
+    },
+    "n02106662": {
+        "specific": "Dog",
+        "coordinate": "Mammals",
+        "superordinate": "Animals",
+        "domain": "Living"
+    },
+    "n01514859": {
+        "specific": "Hen",
+        "coordinate": "Birds",
+        "superordinate": "Animals",
+        "domain": "Living"
+    },
+    "n01665541": {
+        "specific": "Turtle",
+        "coordinate": "Reptiles",
+        "superordinate": "Animals",
+        "domain": "Living"
+    },
+    "n01641577": {
+        "specific": "Bullfrog",
+        "coordinate": "Amphibians",
+        "superordinate": "Animals",
+        "domain": "Living"
+    },
+    "n07749582": {
+        "specific": "Lemon",
+        "coordinate": "Fruits",
+        "superordinate": "Plants",
+        "domain": "Living"
+    },
+    "n07753592": {
+        "specific": "Banana",
+        "coordinate": "Fruits",
+        "superordinate": "Plants",
+        "domain": "Living"
+    },
+    "n11939491": {
+        "specific": "Daisy",
+        "coordinate": "Flowers",
+        "superordinate": "Plants",
+        "domain": "Living"
+    },
+    "n07718472": {
+        "specific": "Cucumber",
+        "coordinate": "Vegetables",
+        "superordinate": "Plants",
+        "domain": "Living"
+    },
+    "n03404251": {
+        "specific": "Fryingpan",
+        "coordinate": "Kitchen objects",
+        "superordinate": "Indoor",
+        "domain": "Non-Living"
+    },
+    "n04398044": {
+        "specific": "Teapot",
+        "coordinate": "Kitchen objects",
+        "superordinate": "Indoor",
+        "domain": "Non-Living"
+    },
+    "n04099969": {
+        "specific": "Chair",
+        "coordinate": "Living room objects",
+        "superordinate": "Indoor",
+        "domain": "Non-Living"
+    },
+    "n03201208": {
+        "specific": "Table",
+        "coordinate": "Living room objects",
+        "superordinate": "Indoor",
+        "domain": "Non-Living"
+    },
+    "n03642806": {
+        "specific": "Lawnmower",
+        "coordinate": "Gardening tools",
+        "superordinate": "Outdoor",
+        "domain": "Non-Living"
+    },
+    "n03393912": {
+        "specific": "Tractor",
+        "coordinate": "Gardening tools",
+        "superordinate": "Outdoor",
+        "domain": "Non-Living"
+    }
+}

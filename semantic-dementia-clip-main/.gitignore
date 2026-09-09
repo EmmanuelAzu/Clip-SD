@@ -1,0 +1,21 @@
+# Python environment and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+env/
+
+# Data and cached weights (Crucial to ignore)
+data/raw/
+data/processed/*.pt
+*.pt
+*.pth
+*.tar
+*.zip
+.ipynb_checkpoints/
+
+# IDE files
+.vscode/
+.idea/
+.DS_Store

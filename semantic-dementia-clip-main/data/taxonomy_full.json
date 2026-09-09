@@ -1,0 +1,541 @@
+{
+    "n02106662": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Domestic Dogs",
+        "specific": "German Shepherd",
+        "typicality": "Typical"
+    },
+    "n02099601": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Domestic Dogs",
+        "specific": "Golden Retriever",
+        "typicality": "Typical"
+    },
+    "n02099712": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Domestic Dogs",
+        "specific": "Labrador Retriever",
+        "typicality": "Typical"
+    },
+    "n02085620": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Domestic Dogs",
+        "specific": "Chihuahua",
+        "typicality": "Atypical"
+    },
+    "n02113799": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Domestic Dogs",
+        "specific": "Standard Poodle",
+        "typicality": "Atypical"
+    },
+    "n02094433": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Domestic Dogs",
+        "specific": "Yorkshire Terrier",
+        "typicality": "Atypical"
+    },
+    "n02123045": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Felines",
+        "specific": "Tabby Cat",
+        "typicality": "Typical"
+    },
+    "n02124075": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Felines",
+        "specific": "Egyptian Cat",
+        "typicality": "Typical"
+    },
+    "n02123394": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Felines",
+        "specific": "Persian Cat",
+        "typicality": "Atypical"
+    },
+    "n02125311": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Felines",
+        "specific": "Cougar",
+        "typicality": "Atypical"
+    },
+    "n02129165": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Felines",
+        "specific": "Lion",
+        "typicality": "Atypical"
+    },
+    "n02481823": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Primates",
+        "specific": "Chimpanzee",
+        "typicality": "Typical"
+    },
+    "n02480495": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Primates",
+        "specific": "Orangutan",
+        "typicality": "Atypical"
+    },
+    "n02486410": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Primates",
+        "specific": "Baboon",
+        "typicality": "Typical"
+    },
+    "n02403003": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Ungulates",
+        "specific": "Ox",
+        "typicality": "Typical"
+    },
+    "n02410509": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Ungulates",
+        "specific": "Bison",
+        "typicality": "Typical"
+    },
+    "n02423022": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Ungulates",
+        "specific": "Gazelle",
+        "typicality": "Typical"
+    },
+    "n02437312": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Ungulates",
+        "specific": "Arabian Camel",
+        "typicality": "Atypical"
+    },
+    "n02415577": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Ungulates",
+        "specific": "Bighorn Sheep",
+        "typicality": "Typical"
+    },
+    "n02395406": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Ungulates",
+        "specific": "Hog",
+        "typicality": "Typical"
+    },
+    "n02504458": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Ungulates",
+        "specific": "African Elephant",
+        "typicality": "Atypical"
+    },
+    "n02132136": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Bears & Small Carnivores",
+        "specific": "Brown Bear",
+        "typicality": "Typical"
+    },
+    "n02509815": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Bears & Small Carnivores",
+        "specific": "Lesser Panda",
+        "typicality": "Atypical"
+    },
+    "n01882714": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Marsupials & Aquatic Mammals",
+        "specific": "Koala",
+        "typicality": "Typical"
+    },
+    "n02074367": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Marsupials & Aquatic Mammals",
+        "specific": "Dugong",
+        "typicality": "Atypical"
+    },
+    "n02364673": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Rodents",
+        "specific": "Guinea Pig",
+        "typicality": "Typical"
+    },
+    "n02058221": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Birds",
+        "specific": "Albatross",
+        "typicality": "Typical"
+    },
+    "n01855672": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Birds",
+        "specific": "Goose",
+        "typicality": "Typical"
+    },
+    "n02002724": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Birds",
+        "specific": "Black Stork",
+        "typicality": "Typical"
+    },
+    "n02056570": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Birds",
+        "specific": "King Penguin",
+        "typicality": "Atypical"
+    },
+    "n01514859": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Birds",
+        "specific": "Hen",
+        "typicality": "Typical"
+    },
+    "n01698640": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Reptiles",
+        "specific": "American Alligator",
+        "typicality": "Typical"
+    },
+    "n01742172": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Reptiles",
+        "specific": "Boa Constrictor",
+        "typicality": "Typical"
+    },
+    "n01665541": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Reptiles",
+        "specific": "Turtle",
+        "typicality": "Atypical"
+    },
+    "n01641577": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Amphibians",
+        "specific": "Bullfrog",
+        "typicality": "Typical"
+    },
+    "n01644900": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Amphibians",
+        "specific": "Tailed Frog",
+        "typicality": "Atypical"
+    },
+    "n01629819": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Amphibians",
+        "specific": "European Fire Salamander",
+        "typicality": "Atypical"
+    },
+    "n01443537": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Fish",
+        "specific": "Goldfish",
+        "typicality": "Typical"
+    },
+    "n01774384": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Arachnids",
+        "specific": "Black Widow",
+        "typicality": "Typical"
+    },
+    "n01774750": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Arachnids",
+        "specific": "Tarantula",
+        "typicality": "Atypical"
+    },
+    "n01770393": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Arachnids",
+        "specific": "Scorpion",
+        "typicality": "Atypical"
+    },
+    "n02206856": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Insects",
+        "specific": "Bee",
+        "typicality": "Typical"
+    },
+    "n02165456": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Insects",
+        "specific": "Ladybug",
+        "typicality": "Typical"
+    },
+    "n02233338": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Insects",
+        "specific": "Cockroach",
+        "typicality": "Atypical"
+    },
+    "n02236044": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Insects",
+        "specific": "Mantis",
+        "typicality": "Atypical"
+    },
+    "n02268443": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Insects",
+        "specific": "Dragonfly",
+        "typicality": "Typical"
+    },
+    "n02226429": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Insects",
+        "specific": "Grasshopper",
+        "typicality": "Typical"
+    },
+    "n02190166": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Insects",
+        "specific": "Fly",
+        "typicality": "Typical"
+    },
+    "n02279972": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Insects",
+        "specific": "Monarch Butterfly",
+        "typicality": "Typical"
+    },
+    "n02281406": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Insects",
+        "specific": "Sulphur Butterfly",
+        "typicality": "Typical"
+    },
+    "n02231487": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Insects",
+        "specific": "Walking Stick",
+        "typicality": "Atypical"
+    },
+    "n01784675": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Myriapods & Ancient Arthropods",
+        "specific": "Centipede",
+        "typicality": "Typical"
+    },
+    "n01768244": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Myriapods & Ancient Arthropods",
+        "specific": "Trilobite",
+        "typicality": "Atypical"
+    },
+    "n02321529": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Marine Invertebrates",
+        "specific": "Sea Cucumber",
+        "typicality": "Atypical"
+    },
+    "n01950731": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Marine Invertebrates",
+        "specific": "Sea Slug",
+        "typicality": "Typical"
+    },
+    "n01945685": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Marine Invertebrates",
+        "specific": "Slug",
+        "typicality": "Typical"
+    },
+    "n01944390": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Marine Invertebrates",
+        "specific": "Snail",
+        "typicality": "Typical"
+    },
+    "n01984695": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Marine Invertebrates",
+        "specific": "Spiny Lobster",
+        "typicality": "Typical"
+    },
+    "n01983481": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Marine Invertebrates",
+        "specific": "American Lobster",
+        "typicality": "Typical"
+    },
+    "n01910747": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Marine Invertebrates",
+        "specific": "Jellyfish",
+        "typicality": "Atypical"
+    },
+    "n01917289": {
+        "domain": "Living",
+        "superordinate": "Animals",
+        "coordinate": "Marine Invertebrates",
+        "specific": "Brain Coral",
+        "typicality": "Atypical"
+    },
+    "n07749582": {
+        "domain": "Living",
+        "superordinate": "Plants",
+        "coordinate": "Citrus",
+        "specific": "Lemon",
+        "typicality": "Typical"
+    },
+    "n07747607": {
+        "domain": "Living",
+        "superordinate": "Plants",
+        "coordinate": "Citrus",
+        "specific": "Orange",
+        "typicality": "Typical"
+    },
+    "n07753592": {
+        "domain": "Living",
+        "superordinate": "Plants",
+        "coordinate": "Fruits",
+        "specific": "Banana",
+        "typicality": "Typical"
+    },
+    "n07768694": {
+        "domain": "Living",
+        "superordinate": "Plants",
+        "coordinate": "Fruits",
+        "specific": "Pomegranate",
+        "typicality": "Atypical"
+    },
+    "n12267677": {
+        "domain": "Living",
+        "superordinate": "Plants",
+        "coordinate": "Fruits",
+        "specific": "Acorn",
+        "typicality": "Atypical"
+    },
+    "n11939491": {
+        "domain": "Living",
+        "superordinate": "Plants",
+        "coordinate": "Flowers",
+        "specific": "Daisy",
+        "typicality": "Typical"
+    },
+    "n07715103": {
+        "domain": "Living",
+        "superordinate": "Plants",
+        "coordinate": "Vegetables",
+        "specific": "Cauliflower",
+        "typicality": "Typical"
+    },
+    "n07720875": {
+        "domain": "Living",
+        "superordinate": "Plants",
+        "coordinate": "Vegetables",
+        "specific": "Bell Pepper",
+        "typicality": "Typical"
+    },
+    "n07718472": {
+        "domain": "Living",
+        "superordinate": "Plants",
+        "coordinate": "Vegetables",
+        "specific": "Cucumber",
+        "typicality": "Atypical"
+    },
+    "n07734744": {
+        "domain": "Living",
+        "superordinate": "Fungi",
+        "coordinate": "Fungi",
+        "specific": "Mushroom",
+        "typicality": "Typical"
+    },
+    "n03404251": {
+        "domain": "Non-Living",
+        "superordinate": "Indoor",
+        "coordinate": "Kitchen Objects",
+        "specific": "Frying Pan",
+        "typicality": "Typical"
+    },
+    "n04398044": {
+        "domain": "Non-Living",
+        "superordinate": "Indoor",
+        "coordinate": "Kitchen Objects",
+        "specific": "Teapot",
+        "typicality": "Atypical"
+    },
+    "n04099969": {
+        "domain": "Non-Living",
+        "superordinate": "Indoor",
+        "coordinate": "Living Room Objects",
+        "specific": "Chair",
+        "typicality": "Typical"
+    },
+    "n03201208": {
+        "domain": "Non-Living",
+        "superordinate": "Indoor",
+        "coordinate": "Living Room Objects",
+        "specific": "Table",
+        "typicality": "Atypical"
+    },
+    "n03393912": {
+        "domain": "Non-Living",
+        "superordinate": "Outdoor",
+        "coordinate": "Gardening Tools",
+        "specific": "Tractor",
+        "typicality": "Atypical"
+    },
+    "n03642806": {
+        "domain": "Non-Living",
+        "superordinate": "Outdoor",
+        "coordinate": "Gardening Tools",
+        "specific": "Lawnmower",
+        "typicality": "Typical"
+    }
+}

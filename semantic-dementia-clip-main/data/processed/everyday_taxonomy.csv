@@ -1,0 +1,29 @@
+wnid,specific,coordinate,superordinate,domain
+n02123045,Tabby Cat,Mammal,Animal,Living
+n02106662,German Shepherd,Mammal,Animal,Living
+n02381460,Horse,Mammal,Animal,Living
+n01514859,Hen/Chicken,Birds & Flying,Animal,Living
+n01847000,Drake/Duck,Birds & Flying,Animal,Living
+n01641577,Bullfrog,"Reptile, Fish & Insects",Animal,Living
+n01443537,Goldfish,"Reptile, Fish & Insects",Animal,Living
+n02276240,Monarch Butterfly,"Reptile, Fish & Insects",Animal,Living
+n07749582,Lemon,Fruits & Vegetables,Plant & Food,Living
+n07753592,Banana,Fruits & Vegetables,Plant & Food,Living
+n07718472,Cucumber,Fruits & Vegetables,Plant & Food,Living
+n07873807,Pizza,Prepared Food & Drinks,Plant & Food,Living
+n07697313,Cheeseburger,Prepared Food & Drinks,Plant & Food,Living
+n07920052,Espresso,Prepared Food & Drinks,Plant & Food,Living
+n04099969,Rocking Chair,Furniture & Decor,Household & Furniture,Non-Living
+n03201208,Dining Table,Furniture & Decor,Household & Furniture,Non-Living
+n03062248,Coffee Mug,Kitchenware & Utensils,Household & Furniture,Non-Living
+n04557648,Water Bottle,Kitchenware & Utensils,Household & Furniture,Non-Living
+n03045698,Cellular Phone,Tech & Media,Electronics & Gear,Non-Living
+n03642806,Laptop Computer,Tech & Media,Electronics & Gear,Non-Living
+n04070727,Refrigerator,Home Appliances,Electronics & Gear,Non-Living
+n03761084,Microwave Oven,Home Appliances,Electronics & Gear,Non-Living
+n03594945,Running Shoe,Clothing & Apparel,Wearables & Personal,Non-Living
+n04350905,Suit Coat,Clothing & Apparel,Wearables & Personal,Non-Living
+n03977966,Police Van,Land Vehicles,Vehicles,Non-Living
+n03791053,Motor Scooter,Land Vehicles,Vehicles,Non-Living
+n02691156,Airliner,Air & Water Transport,Vehicles,Non-Living
+n02950826,Catamaran,Air & Water Transport,Vehicles,Non-Living
