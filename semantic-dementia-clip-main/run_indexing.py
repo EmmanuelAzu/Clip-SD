@@ -8,7 +8,7 @@ import torch
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
 
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 if PROJECT_ROOT not in sys.path:
     sys.path.append(PROJECT_ROOT)
 
@@ -91,7 +91,11 @@ def run_indexing(
             raw_csv = os.path.join(PROJECT_ROOT, "data", "raw", "metadata_raw.csv")
 
     if img_dir is None:
-        img_dir = os.path.join(PROJECT_ROOT, "data", "raw")
+        # NOTE: previously defaulted to "data/raw" -- a directory that
+        # doesn't exist. dataset_downloader.py (and build_general_dataset.py)
+        # both actually write images to "data/images/", so that's the real
+        # default location.
+        img_dir = os.path.join(PROJECT_ROOT, "data", "images")
 
     if output_dir is None:
         output_dir = os.path.join(PROJECT_ROOT, "data", "processed")

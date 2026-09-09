@@ -29,6 +29,11 @@ def prepare_directories(base_dir: str) -> dict[str, str]:
     """Ensures all output and data directories exist prior to pipeline execution."""
     dirs = {
         "data_raw": os.path.join(base_dir, "data", "raw"),
+        # Images actually live in data/images/ (that's where
+        # dataset_downloader.py and build_general_dataset.py both write
+        # them) -- "data/raw" is created for backward-compat but is not
+        # where any script actually places image files.
+        "data_images": os.path.join(base_dir, "data", "images"),
         "data_processed": os.path.join(base_dir, "data", "processed"),
         "results_base": os.path.join(base_dir, "data", "results"),
         "results_tsne": os.path.join(base_dir, "data", "results", "tsne"),
@@ -92,7 +97,7 @@ def execute_master_pipeline(
                 raw_csv=os.path.join(
                     PROJECT_ROOT, "tests", "metadata_raw.csv"
                 ),
-                img_dir=dirs["data_raw"],
+                img_dir=dirs["data_images"],
                 output_dir=dirs["data_processed"],
             )
             print(f"[+] Stage 1 Complete. Saved tensor bank to: {indexed_path}")
