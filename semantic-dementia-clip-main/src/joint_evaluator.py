@@ -15,13 +15,9 @@ if PROJECT_ROOT not in sys.path:
 from src.pruning_engine import CLIPPruningEngine
 from src.metrics import (
     compute_mrr,
-    compute_cka,
-    compute_neighborhood_preservation,
     compute_entropy,
     compute_typicality_delta,
-    compute_top10_breakdown_depth,
 )
-from src.baseline_conditions import gaussian_noise_floor_features
 
 
 class EvaluationImageDataset(Dataset):
@@ -131,6 +127,7 @@ class JointSpaceEvaluator:
         sample_frac=1.0,
         target_n=None,
         balance_taxonomically=True,
+        restrict_classes=None,
     ):
         if not os.path.exists(metadata_path) and os.path.exists(os.path.join(PROJECT_ROOT, metadata_path)):
             metadata_path = os.path.join(PROJECT_ROOT, metadata_path)
@@ -146,6 +143,24 @@ class JointSpaceEvaluator:
 
         spec_col = "specific" if "specific" in df.columns else ("concept" if "concept" in df.columns else "category")
 
+        # Curated-subset restriction (src/curated_config.py): the dominant
+        # compute cost throughout this pipeline is re-encoding the
+        # candidate image pool at every pruning level, so restricting to a
+        # small, well-spread, curated set of classes up front -- before
+        # any balancing/sampling below -- is what actually makes runs
+        # fast, independent of pruning-schedule granularity or scenario
+        # count.
+        if restrict_classes is not None and spec_col in df.columns:
+            before = len(df)
+            df = df[df[spec_col].isin(restrict_classes)].reset_index(drop=True)
+            print(
+                f"[*] Restricted to curated class subset ({len(restrict_classes)} classes): "
+                f"{len(df)}/{before} rows kept."
+            )
+            missing = set(restrict_classes) - set(df[spec_col].unique())
+            if missing:
+                print(f"[!] WARNING: {missing} not found in metadata -- check spelling/availability.")
+
         # Taxonomic balancing / sampling
         if balance_taxonomically and spec_col in df.columns:
             n_classes = df[spec_col].nunique()
@@ -154,11 +169,27 @@ class JointSpaceEvaluator:
             else:
                 samples_per_class = df.groupby(spec_col).size().min()
 
-            df = (
-                df.groupby(spec_col, group_keys=False)
-                .apply(lambda x: x.sample(min(len(x), samples_per_class), random_state=42))
-                .reset_index(drop=True)
-            )
+            # NOTE: previously used df.groupby(spec_col, group_keys=False)
+            # .apply(lambda x: x.sample(...)) -- on recent pandas versions,
+            # .groupby().apply() SILENTLY EXCLUDES the grouping column from
+            # the result by default (a real, confirmed behavior change, not
+            # a hypothetical). That means spec_col ("specific") itself was
+            # being dropped from `df` right here, for every single
+            # JointSpaceEvaluator instantiation using the default
+            # balance_taxonomically=True. Downstream code with a fallback
+            # (EvaluationImageDataset) silently self-corrected to a coarser
+            # column (e.g. "coordinate") instead of crashing -- meaning
+            # evaluations were silently running at the wrong taxonomic
+            # granularity with no error at all. Code without a fallback
+            # (gen_tSNE_subcat_nerr.py) crashed with a confusing KeyError.
+            # Fixed by iterating groups directly and reconstructing via
+            # .loc[], which never triggers the grouping-column-exclusion
+            # behavior since .apply() is never called.
+            selected_idx = []
+            for _, group in df.groupby(spec_col, group_keys=False):
+                n = min(len(group), samples_per_class)
+                selected_idx.extend(group.sample(n=n, random_state=42).index.tolist())
+            df = df.loc[selected_idx].reset_index(drop=True)
             print(
                 f"[*] Taxonomically balanced: {len(df)} total samples equalized across {n_classes} classes."
             )
@@ -249,30 +280,31 @@ class JointSpaceEvaluator:
         pruning_method="l1_unstructured",
         depth_zone="global",
         sub_module="all",
-        include_noise_floor=True,
     ):
-        """Runs the full pruning sweep and returns a metrics DataFrame.
+        """Runs the pruning sweep and returns a metrics DataFrame.
 
         Args:
-            scenario: "joint" (both encoders pruned together -- Combined
-              Transmodal Atrophy / Semantic Dementia Hub Failure proxy,
-              Sec. 3.3.4 Scenario 3), "text_only" (only the text encoder is
-              pruned, images stay pristine -- Progressive Aphasia proxy,
-              Scenario 1), or "vision_only" (only the vision encoder is
-              pruned, text stays pristine -- Visual Object Agnosia proxy,
-              Scenario 2). This is the three-scenario architecture from
-              Methodology Sec. 3.3.4 Stage 7.5, previously only partially
-              implemented (and unreachable) in TestingHarness.
-            masking_mode: "static" (default, Directive 6.1 non-iterative)
-              or "iterative" (compounding damage) -- see
-              CLIPPruningEngine.get_pruned_model docstring. The accumulator
-              is reset once at the start of this sweep, so pruning_levels
-              MUST be ascending for "iterative" to behave correctly.
-            include_noise_floor: if True, also computes the Bfloor Gaussian
-              noise-injection condition (Sec. 3.3.3) once, independent of
-              pruning_level, and attaches it as constant reference columns
-              (prefixed "noise_floor_") on every row for easy plotting
-              alongside the pruning trajectory.
+            scenario: "joint" (both encoders pruned together) or
+              "vision_only" (only the vision encoder is pruned, text stays
+              pristine). "text_only" is still accepted by the pruning
+              engine underneath if ever needed again, but the streamlined
+              pipeline only exercises joint/vision_only -- the two
+              scenarios currently in scope.
+            masking_mode: "static" (default) or "iterative" -- see
+              CLIPPruningEngine.get_pruned_model docstring.
+
+        Metrics kept: Top-1 specific/coordinate/superordinate accuracy,
+        MRR, Shannon entropy, the 4-tier clinical error breakdown
+        (coordinate/superordinate/domain error/domain collapse), and
+        typicality delta where applicable. CKA, neighborhood preservation,
+        the Bfloor noise-floor reference, and the top-10 depth breakdown
+        have been removed as out of scope for the current focused
+        pipeline -- compute_cka/compute_neighborhood_preservation/
+        compute_top10_breakdown_depth remain implemented in
+        src/metrics.py if needed again later (src/baseline_conditions.py,
+        which implemented Bfloor, was deleted since nothing else used it --
+        reimplementing gaussian_noise_floor_features is a few lines if
+        it's ever needed again; see git history).
         """
         if scenario not in ("joint", "text_only", "vision_only"):
             raise ValueError("scenario must be 'joint', 'text_only', or 'vision_only'.")
@@ -295,24 +327,6 @@ class JointSpaceEvaluator:
         concept_to_idx = {c: i for i, c in enumerate(unique_concepts)}
         target_indices = torch.tensor([concept_to_idx[c] for c in labels])
         target_indices_np = target_indices.numpy()
-
-        # Bfloor (Sec. 3.3.3): computed once, independent of pruning level --
-        # it never touches model weights, only replaces the query features.
-        noise_floor_cols = {}
-        if include_noise_floor:
-            noise_text = gaussian_noise_floor_features(ref_text)
-            floor_sim = torch.matmul(ref_img, noise_text.T).numpy()
-            floor_preds = np.argmax(floor_sim, axis=1)
-            noise_floor_cols = {
-                "noise_floor_top1_acc": float((floor_preds == target_indices_np).mean()),
-                "noise_floor_mrr": compute_mrr(floor_sim, target_indices_np),
-                "noise_floor_entropy": compute_entropy(floor_sim),
-            }
-            print(
-                f"[*] Bfloor (Gaussian noise) reference -- top1: "
-                f"{noise_floor_cols['noise_floor_top1_acc']:.4f}, "
-                f"entropy: {noise_floor_cols['noise_floor_entropy']:.4f} bits"
-            )
 
         results = []
 
@@ -401,21 +415,15 @@ class JointSpaceEvaluator:
                 "scenario": scenario,
                 "masking_mode": masking_mode,
                 "pruning_method": pruning_method,
-                "i2t_top1": spec_acc,
                 "top1_specific_acc": spec_acc,
                 "top1_coordinate_acc": coordinate_acc,
                 "top1_super_acc": super_acc,
                 "mrr": mrr,
                 "semantic_entropy": entropy,
-                "cka_vision": compute_cka(ref_img.numpy(), p_img.numpy()),
-                "cka_text": compute_cka(ref_text.numpy(), p_text.numpy()),
-                "npr_vision": compute_neighborhood_preservation(ref_img.numpy(), p_img.numpy(), k=5),
                 "coordinate error": coord_err,
                 "superordinate error": super_err,
                 "domain error": domain_err,
                 "domain collapse": collapse_err,
-                **compute_top10_breakdown_depth(sim_matrix_np, target_indices_np, eval_meta, unique_concepts),
-                **noise_floor_cols,
             }
 
             # Typicality Delta (Sec. 3.4, "typicality effect"): only

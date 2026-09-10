@@ -1,3 +1,22 @@
+"""Bozeat-style text -> image retrieval experiment ("a duck with four
+legs" analogue), scoped to the curated 10-class subset (both as query
+prompts and as the retrieval candidate pool -- src/curated_config.py).
+
+Restricting the candidate pool this way is what actually makes this fast:
+previously every pruning level re-encoded the full balanced dataset
+(~7,200 images) just to answer 4 text queries. Now it re-encodes ~30-50
+images (10 curated classes x a handful of samples each) to answer 10
+queries -- a ~150-200x reduction in the dominant cost, while covering
+more than twice as many prompts.
+
+Two outputs:
+  1. A full-resolution retrieval CSV/plot across every pruning level in
+     the schedule (cheap now, so no need to subsample for the numbers).
+  2. A readable qualitative image-grid, which -- unlike the numeric
+     curve -- genuinely needs a small number of columns to stay legible,
+     so it uses a representative subset of pruning levels.
+"""
+
 import os
 import sys
 import clip
@@ -10,14 +29,6 @@ from PIL import Image
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if PROJECT_ROOT not in sys.path:
     sys.path.append(PROJECT_ROOT)
-
-PRUNING_LEVELS_5PCT = [round(x, 2) for x in np.arange(0.00, 0.91, 0.05).tolist()]
-
-LIVING_KEYWORDS = [
-    "living", "animal", "fruit", "vegetable", "bird", "mammal",
-    "fauna", "flora", "organism", "amphibian", "reptile", "dog",
-    "cat", "fish", "insect", "flower", "tree"
-]
 
 
 def load_image_safely(img_path):
@@ -44,59 +55,38 @@ def load_image_safely(img_path):
     return None
 
 
-def select_living_taxonomy_prompts(metadata, num_prompts=4):
-    """Filters dataset taxonomy strictly for living entities."""
-    spec_col = "specific" if "specific" in metadata.columns else ("concept" if "concept" in metadata.columns else "category")
-    meta_unique = metadata.drop_duplicates(subset=[spec_col]).copy()
-
-    def _is_living(row):
-        combined_text = " ".join([
-            str(row.get("domain", "")),
-            str(row.get("superordinate", "")),
-            str(row.get("coordinate", "")),
-            str(row.get(spec_col, ""))
-        ]).lower()
-        return any(kw in combined_text for kw in LIVING_KEYWORDS)
-
-    meta_unique["is_living"] = meta_unique.apply(_is_living, axis=1)
-    living_meta = meta_unique[meta_unique["is_living"]]
-
-    if len(living_meta) == 0:
-        living_meta = meta_unique
-
-    selected_prompts = living_meta[spec_col].head(num_prompts).tolist()
-    return selected_prompts
-
-
-def run_bozeat_visual_grid(
+def run_bozeat_experiment(
     harness,
-    pruning_levels=PRUNING_LEVELS_5PCT,
-    target_prompts=None,
-    output_dir=None,
-    num_prompts=4,
-):
-    """Executes Bozeat 'Draw from Prompt' task on living items and saves rendered visual grid."""
+    target_prompts: list[str],
+    pruning_levels: list[float],
+    display_pruning_levels: list[float] | None = None,
+    output_dir: str | None = None,
+) -> tuple[str, str]:
+    """Runs Bozeat-style retrieval for `target_prompts` at every level in
+    `pruning_levels`, using `harness.valid_metadata` as BOTH the source of
+    query prompts and the retrieval candidate pool -- pass an evaluator
+    already restricted to the curated subset (JointSpaceEvaluator(
+    restrict_classes=CURATED_CLASSES)) for this to be fast and meaningful.
+
+    Returns (csv_path, image_grid_path).
+    """
     if output_dir is None:
         output_dir = os.path.join(PROJECT_ROOT, "data", "results", "bozeat_experiment")
-
     os.makedirs(output_dir, exist_ok=True)
 
-    selected_prompts = target_prompts or select_living_taxonomy_prompts(
-        harness.valid_metadata, num_prompts=num_prompts
-    )
-    print(f"[*] Bozeat Selected Living Prompts ({len(selected_prompts)} items):\n    {selected_prompts}")
+    if display_pruning_levels is None:
+        # A readable subset for the qualitative image grid -- the full
+        # numeric curve still uses every level in `pruning_levels`.
+        display_pruning_levels = [p for p in pruning_levels if round(p * 1000) % 100 == 0]
+        if pruning_levels[-1] not in display_pruning_levels:
+            display_pruning_levels.append(pruning_levels[-1])
 
-    spec_col = "specific" if "specific" in harness.valid_metadata.columns else ("concept" if "concept" in harness.valid_metadata.columns else "category")
-    # Bare single-word Bozeat query (Directive 3.1) -- no conversational template.
-    tokens = clip.tokenize([p.lower() for p in selected_prompts]).to(harness.device)
+    spec_col = "specific" if "specific" in harness.valid_metadata.columns else "concept"
+    tokens = clip.tokenize([p.lower() for p in target_prompts]).to(harness.device)
 
-    retrieval_grid_data = {p: [] for p in selected_prompts}
+    records = []  # one row per (prompt, pruning_level)
 
     for p_level in pruning_levels:
-        # Always derive a fresh pruned copy from the pristine base model
-        # (Non-Iterative Masking, Directive 6.1) rather than mutating
-        # harness.base_model in place -- matches every other script's
-        # convention and uses the real CLIPPruningEngine API.
         pruned_model = harness.pruning_engine.get_pruned_model(
             amount=p_level, encoder_type="joint", target_area="full"
         )
@@ -108,9 +98,11 @@ def run_bozeat_visual_grid(
             visual_memory = harness._reindex_visual_memory(pruned_model)
 
             sim_matrix = text_feats @ visual_memory.to(harness.device).T
-            best_match_indices = torch.argmax(sim_matrix, dim=-1).cpu().numpy()
+            best_scores, best_match_indices = torch.max(sim_matrix, dim=-1)
+            best_match_indices = best_match_indices.cpu().numpy()
+            best_scores = best_scores.cpu().numpy()
 
-        for idx, prompt_concept in enumerate(selected_prompts):
+        for idx, prompt_concept in enumerate(target_prompts):
             best_img_idx = best_match_indices[idx]
             retrieved_row = harness.valid_metadata.iloc[best_img_idx]
             retrieved_concept = retrieved_row[spec_col]
@@ -120,71 +112,122 @@ def run_bozeat_visual_grid(
                 path_col = next((c for c in ["filepath", "filename", "image_path", "path"] if c in retrieved_row.index), None)
                 img_path = retrieved_row[path_col] if path_col else ""
 
-            is_correct = (retrieved_concept.lower() == prompt_concept.lower())
-            retrieval_grid_data[prompt_concept].append((p_level, img_path, retrieved_concept, is_correct))
+            is_correct = str(retrieved_concept).lower() == str(prompt_concept).lower()
+            records.append({
+                "prompt": prompt_concept,
+                "pruning_level": p_level,
+                "retrieved_concept": retrieved_concept,
+                "retrieved_img_path": img_path,
+                "correct": is_correct,
+                "top1_similarity": float(best_scores[idx]),
+            })
 
-    n_rows = len(selected_prompts)
-    n_cols = len(pruning_levels)
+    results_df = pd.DataFrame(records)
+    csv_path = os.path.join(output_dir, "bozeat_retrieval_results.csv")
+    results_df.to_csv(csv_path, index=False)
+    print(f"[+] Bozeat retrieval results saved to: {csv_path}")
 
-    fig, axes = plt.subplots(n_rows, n_cols, figsize=(2.4 * n_cols, 2.8 * n_rows), dpi=300)
+    _plot_retrieval_curve(results_df, target_prompts, output_dir)
+    grid_path = _plot_image_grid(results_df, target_prompts, display_pruning_levels, output_dir)
+
+    return csv_path, grid_path
+
+
+def _plot_retrieval_curve(results_df: pd.DataFrame, target_prompts: list[str], output_dir: str) -> str:
+    """Full-resolution (every pruning level) per-class retrieval accuracy
+    and mean confidence, plus the aggregate across all 10 classes.
+    """
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 5.5), dpi=200)
+    cmap = plt.get_cmap("tab10")
+
+    agg_acc = results_df.groupby("pruning_level")["correct"].mean()
+    agg_conf = results_df.groupby("pruning_level")["top1_similarity"].mean()
+
+    for i, prompt in enumerate(target_prompts):
+        sub = results_df[results_df["prompt"] == prompt].sort_values("pruning_level")
+        ax1.plot(sub["pruning_level"] * 100, sub["correct"].astype(float),
+                  color=cmap(i), alpha=0.55, linewidth=1.2)
+        ax2.plot(sub["pruning_level"] * 100, sub["top1_similarity"],
+                  color=cmap(i), alpha=0.55, linewidth=1.2, label=prompt)
+
+    ax1.plot(agg_acc.index * 100, agg_acc.values, color="black", linewidth=3, label="Mean (all 10 classes)")
+    ax2.plot(agg_conf.index * 100, agg_conf.values, color="black", linewidth=3, linestyle="--")
+
+    ax1.set_xlabel("Pruning Level (%)"); ax1.set_ylabel("Retrieval Correct (1/0)")
+    ax1.set_title("Bozeat Retrieval Accuracy per Class", fontsize=12, fontweight="bold")
+    ax1.legend(fontsize=8); ax1.grid(alpha=0.3)
+
+    ax2.set_xlabel("Pruning Level (%)"); ax2.set_ylabel("Top-1 Cosine Similarity")
+    ax2.set_title("Retrieval Confidence per Class", fontsize=12, fontweight="bold")
+    ax2.legend(fontsize=6.5, ncol=2); ax2.grid(alpha=0.3)
+
+    plt.tight_layout()
+    save_path = os.path.join(output_dir, "bozeat_retrieval_curve.png")
+    plt.savefig(save_path, dpi=200, bbox_inches="tight")
+    plt.close()
+    print(f"[+] Bozeat retrieval curve saved to: {save_path}")
+    return save_path
+
+
+def _plot_image_grid(
+    results_df: pd.DataFrame,
+    target_prompts: list[str],
+    display_pruning_levels: list[float],
+    output_dir: str,
+) -> str:
+    """The qualitative "what did it retrieve" grid, restricted to a
+    readable subset of pruning levels.
+    """
+    n_rows = len(target_prompts)
+    n_cols = len(display_pruning_levels)
+
+    fig, axes = plt.subplots(n_rows, n_cols, figsize=(2.4 * n_cols, 2.8 * n_rows), dpi=200)
     if n_rows == 1:
         axes = np.expand_dims(axes, axis=0)
+    if n_cols == 1:
+        axes = np.expand_dims(axes, axis=1)
 
-    for r_idx, prompt_concept in enumerate(selected_prompts):
-        records = retrieval_grid_data[prompt_concept]
-
-        for c_idx, (p_level, img_path, ret_concept, is_correct) in enumerate(records):
+    for r_idx, prompt in enumerate(target_prompts):
+        sub = results_df[results_df["prompt"] == prompt].set_index("pruning_level")
+        for c_idx, p_level in enumerate(display_pruning_levels):
             ax = axes[r_idx, c_idx]
-            img = load_image_safely(img_path)
+            row = sub.loc[p_level] if p_level in sub.index else None
+            ret_concept = row["retrieved_concept"] if row is not None else "?"
+            img_path = row["retrieved_img_path"] if row is not None else ""
+            is_correct = bool(row["correct"]) if row is not None else False
 
+            img = load_image_safely(img_path)
             if img is not None:
                 ax.imshow(img)
             else:
                 ax.set_facecolor("#e0e0e0")
                 ax.text(0.5, 0.5, f"{ret_concept}", ha="center", va="center", fontsize=6, color="black")
 
-            ax.set_xticks([])
-            ax.set_yticks([])
+            ax.set_xticks([]); ax.set_yticks([])
 
-            if is_correct:
-                title_text = f"'{ret_concept}' ✓"
-                title_color = "darkgreen"
-                box_color = "#e6f4ea"
-            else:
-                title_text = f"'{ret_concept}' ✗"
-                title_color = "darkred"
-                box_color = "#fce8e6"
-
+            check_mark = "\u2713" if is_correct else "\u2717"
+            title_text = f"'{ret_concept}' {check_mark}"
+            title_color = "darkgreen" if is_correct else "darkred"
+            box_color = "#e6f4ea" if is_correct else "#fce8e6"
             ax.set_title(
-                title_text,
-                fontsize=6.5,
-                color=title_color,
-                fontweight="bold",
-                pad=3,
+                title_text, fontsize=6.5, color=title_color, fontweight="bold", pad=3,
                 bbox=dict(boxstyle="round,pad=0.15", facecolor=box_color, edgecolor=title_color, lw=0.6),
             )
 
             if r_idx == 0:
-                ax.set_xlabel(f"{int(p_level * 100)}%", fontsize=9.0, fontweight="bold", labelpad=6)
+                ax.set_xlabel(f"{p_level * 100:.1f}%", fontsize=9.0, fontweight="bold", labelpad=6)
                 ax.xaxis.set_label_position("top")
-
             if c_idx == 0:
-                ax.set_ylabel(
-                    f'Prompt:\n"{prompt_concept}"',
-                    fontsize=9.0,
-                    fontweight="bold",
-                    rotation=0,
-                    labelpad=40,
-                    ha="right",
-                    va="center",
-                )
+                ax.set_ylabel(f'"{prompt}"', fontsize=9.0, fontweight="bold",
+                               rotation=0, labelpad=48, ha="right", va="center")
 
-    plt.suptitle("Bozeat 'Draw from Prompt' Task: Visual Retrieval Trajectory Across Atrophy Increments (Living Things)", fontsize=13, fontweight="bold", y=1.02)
+    plt.suptitle(
+        "Bozeat Text\u2192Image Retrieval Trajectory (curated 10-class subset)",
+        fontsize=13, fontweight="bold", y=1.01,
+    )
     plt.tight_layout()
-
-    save_path = os.path.join(output_dir, "bozeat_retrieved_images_living.png")
-    plt.savefig(save_path, dpi=300, bbox_inches="tight")
+    save_path = os.path.join(output_dir, "bozeat_retrieval_grid.png")
+    plt.savefig(save_path, dpi=200, bbox_inches="tight")
     plt.close()
-
-    print(f"[+] Saved Bozeat living items visual grid to: {save_path}")
+    print(f"[+] Bozeat image grid saved to: {save_path}")
     return save_path

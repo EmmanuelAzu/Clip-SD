@@ -1,56 +1,45 @@
+import argparse
 import os
 import sys
-import numpy as np
-import torch
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 if PROJECT_ROOT not in sys.path:
     sys.path.append(PROJECT_ROOT)
 
-import src.bozeat_experiment as bozeat_module
 from src.joint_evaluator import JointSpaceEvaluator
-
-PRUNING_LEVELS_5PCT = getattr(
-    bozeat_module,
-    "PRUNING_LEVELS_5PCT",
-    [round(x, 2) for x in np.arange(0.00, 0.91, 0.05)],
-)
-DEFAULT_TARGET_PROMPTS = getattr(bozeat_module, "DEFAULT_TARGET_PROMPTS", None)
+from src.bozeat_experiment import run_bozeat_experiment
+from src.curated_config import CURATED_CLASSES, PRUNING_LEVELS_FOCUSED
 
 
-def main():
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    print(
-        f"[*] Executing {len(PRUNING_LEVELS_5PCT)}-stage Bozeat Visual Retrieval Grid on: {device}"
+def main(output_dir=None):
+    if output_dir is None:
+        output_dir = os.path.join(PROJECT_ROOT, "data", "results", "bozeat_experiment")
+
+    print("=" * 60)
+    print(" BOZEAT TEXT->IMAGE RETRIEVAL EXPERIMENT (curated 10-class subset) ")
+    print("=" * 60)
+    print(f"[*] Prompts ({len(CURATED_CLASSES)}): {CURATED_CLASSES}")
+    print(f"[*] Pruning Grid ({len(PRUNING_LEVELS_FOCUSED)} stages, 2.5% steps, 0-70%)")
+
+    # restrict_classes here makes BOTH the query prompts and the retrieval
+    # candidate pool the curated 10-class subset -- this is what makes the
+    # experiment fast (re-encoding ~30-50 images per level instead of the
+    # full balanced dataset).
+    evaluator = JointSpaceEvaluator(restrict_classes=CURATED_CLASSES, balance_taxonomically=True)
+
+    csv_path, grid_path = run_bozeat_experiment(
+        evaluator,
+        target_prompts=CURATED_CLASSES,
+        pruning_levels=PRUNING_LEVELS_FOCUSED,
+        output_dir=output_dir,
     )
 
-    metadata_path = os.path.join(
-        PROJECT_ROOT, "data", "processed", "metadata_processed.csv"
-    )
-    output_dir = os.path.join(
-        PROJECT_ROOT, "data", "results", "bozeat_experiment"
-    )
-
-    # JointSpaceEvaluator already builds a real CLIPPruningEngine on
-    # self.base_model in its own __init__ (src/joint_evaluator.py) -- no
-    # extra resolution/attachment step is needed.
-    evaluator = JointSpaceEvaluator(
-        metadata_path=metadata_path,
-        model_name="ViT-B/32",
-        device=device,
-        batch_size=32,
-        balance_taxonomically=True,
-    )
-
-    kwargs = {
-        "pruning_levels": PRUNING_LEVELS_5PCT,
-        "output_dir": output_dir,
-    }
-    if DEFAULT_TARGET_PROMPTS is not None:
-        kwargs["target_prompts"] = DEFAULT_TARGET_PROMPTS
-
-    bozeat_module.run_bozeat_visual_grid(evaluator, **kwargs)
+    print(f"\n[+] Done.\n    Results CSV: {csv_path}\n    Image grid: {grid_path}")
+    return csv_path
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Run the Bozeat retrieval experiment.")
+    parser.add_argument("--output_dir", type=str, default=None)
+    args = parser.parse_args()
+    main(output_dir=args.output_dir)
