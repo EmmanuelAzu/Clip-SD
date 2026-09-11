@@ -128,6 +128,7 @@ class JointSpaceEvaluator:
         target_n=None,
         balance_taxonomically=True,
         restrict_classes=None,
+        fixed_samples_per_class=None,
     ):
         if not os.path.exists(metadata_path) and os.path.exists(os.path.join(PROJECT_ROOT, metadata_path)):
             metadata_path = os.path.join(PROJECT_ROOT, metadata_path)
@@ -164,7 +165,15 @@ class JointSpaceEvaluator:
         # Taxonomic balancing / sampling
         if balance_taxonomically and spec_col in df.columns:
             n_classes = df[spec_col].nunique()
-            if target_n is not None and target_n > 0:
+            if fixed_samples_per_class is not None:
+                # Fixed cap per class regardless of how many are actually
+                # available (e.g. 5 images/breed even if 100+ exist) --
+                # used by the curated multi-breed-per-group design so
+                # every specific class contributes equally, rather than
+                # auto-balancing to whatever the smallest available class
+                # happens to have.
+                samples_per_class = fixed_samples_per_class
+            elif target_n is not None and target_n > 0:
                 samples_per_class = max(1, target_n // n_classes)
             else:
                 samples_per_class = df.groupby(spec_col).size().min()
@@ -382,6 +391,17 @@ class JointSpaceEvaluator:
             mrr = compute_mrr(sim_matrix_np, target_indices_np)
             entropy = compute_entropy(sim_matrix_np)
 
+            # Top-5 / Top-10 accuracy: is the true class within the K
+            # highest-similarity candidates, not just the single best?
+            n_candidates = sim_matrix.shape[1]
+            topk_preds = torch.argsort(sim_matrix, dim=1, descending=True)
+            top5_k = min(5, n_candidates)
+            top10_k = min(10, n_candidates)
+            top5_correct = (topk_preds[:, :top5_k] == target_indices.unsqueeze(1)).any(dim=1)
+            top10_correct = (topk_preds[:, :top10_k] == target_indices.unsqueeze(1)).any(dim=1)
+            top5_acc = top5_correct.float().mean().item()
+            top10_acc = top10_correct.float().mean().item()
+
             coord_err, super_err, domain_err, collapse_err = 0, 0, 0, 0
             for i, is_corr in enumerate(correct_mask):
                 if not is_corr:
@@ -416,6 +436,8 @@ class JointSpaceEvaluator:
                 "masking_mode": masking_mode,
                 "pruning_method": pruning_method,
                 "top1_specific_acc": spec_acc,
+                "top5_specific_acc": top5_acc,
+                "top10_specific_acc": top10_acc,
                 "top1_coordinate_acc": coordinate_acc,
                 "top1_super_acc": super_acc,
                 "mrr": mrr,

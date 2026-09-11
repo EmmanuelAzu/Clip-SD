@@ -1,16 +1,12 @@
 """The one tSNE visualization for this project.
 
-Previously the codebase had FIVE separate, largely-duplicate tSNE
-implementations: src/generate_tsne.py, src/extended_hierarchical_eval.py's
-generate_hierarchical_hsv_tsne, and three standalone scripts/modules
-(run_tsne_5stages.py + generate_tsne_subcategories.py, run_tSNE_nerr.py +
-gen_tSNE_subcat_nerr.py, run_tsne_no_errors.py +
-generate_tsne_subcat_no_error.py). All five are superseded by this single
-module, scoped to the curated 10-class subset (src/curated_config.py) for
-both speed (re-encoding ~30-50 images per pruning level instead of ~7,200)
-and interpretability (10 named, well-known classes with a stable color
-per class, rather than domain-grouped colormap families that needed a
-legend of their own to decode).
+Shows EVERY pruning level in the schedule (not a subsampled set), colored
+by coordinate-group hue family with a distinct shade per specific
+breed/species within that group (src/curated_config.py::build_class_colors)
+-- so a viewer can tell at a glance which points belong to the same
+species (near-identical shade), the same broader group (same hue family),
+or a different group entirely (different hue), without needing to
+cross-reference a class-by-class legend.
 """
 
 import os
@@ -25,12 +21,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if PROJECT_ROOT not in sys.path:
     sys.path.append(PROJECT_ROOT)
 
-from src.curated_config import CURATED_CLASSES
-
-# tab10 gives 10 maximally-distinct qualitative colors -- exactly matching
-# the 10 curated classes, one color each, no palette-family logic needed.
-_CMAP = plt.get_cmap("tab10")
-CLASS_COLORS = {cls: _CMAP(i) for i, cls in enumerate(CURATED_CLASSES)}
+from src.curated_config import CURATED_TAXONOMY, CURATED_CLASSES, build_class_colors
 
 
 def generate_curated_tsne_grid(
@@ -38,19 +29,22 @@ def generate_curated_tsne_grid(
     pruning_levels_to_show: list[float] | None = None,
     scenario: str = "joint",
     output_dir: str | None = None,
+    n_cols: int = 6,
 ) -> str:
-    """Generates one tSNE grid: a panel per pruning level (default 6
-    representative stages spanning 0-70%), points colored by specific
-    class, fit globally across all stacked stages so positions are
-    directly comparable panel to panel.
+    """Generates one tSNE grid: one panel per pruning level (default:
+    every level in the schedule), points colored by specific class within
+    a coordinate-group hue family, fit globally across all stacked stages
+    so positions are directly comparable panel to panel. Legend is always
+    included, per explicit request, organized by coordinate group.
     """
     if pruning_levels_to_show is None:
-        pruning_levels_to_show = [0.0, 0.15, 0.30, 0.45, 0.60, 0.70]
+        from src.curated_config import PRUNING_LEVELS_FOCUSED
+        pruning_levels_to_show = PRUNING_LEVELS_FOCUSED
     if output_dir is None:
         output_dir = os.path.join(PROJECT_ROOT, "data", "results")
     os.makedirs(output_dir, exist_ok=True)
 
-    spec_col = "specific" if "specific" in evaluator.valid_metadata.columns else "concept"
+    class_colors = build_class_colors()
     meta = evaluator.valid_metadata.reset_index(drop=True)
 
     all_feats = []
@@ -84,9 +78,9 @@ def generate_curated_tsne_grid(
     X_2d = tsne.fit_transform(X_total)
 
     n_stages = len(pruning_levels_to_show)
-    n_cols = min(3, n_stages)
+    n_cols = min(n_cols, n_stages)
     n_rows = int(np.ceil(n_stages / n_cols))
-    fig, axes = plt.subplots(n_rows, n_cols, figsize=(5.2 * n_cols, 5.0 * n_rows))
+    fig, axes = plt.subplots(n_rows, n_cols, figsize=(3.6 * n_cols, 3.4 * n_rows))
     axes_flat = np.atleast_1d(axes).flatten()
 
     xlim = (X_2d[:, 0].min() - 5, X_2d[:, 0].max() + 5)
@@ -103,11 +97,11 @@ def generate_curated_tsne_grid(
                 continue
             pts = stage_points[cls_mask]
             ax.scatter(
-                pts[:, 0], pts[:, 1], s=40, color=CLASS_COLORS[cls],
-                alpha=0.85, edgecolor="white", linewidth=0.4, label=cls,
+                pts[:, 0], pts[:, 1], s=22, color=class_colors[cls],
+                alpha=0.85, edgecolor="white", linewidth=0.3,
             )
 
-        ax.set_title(f"{p_level * 100:.1f}% Pruned", fontsize=12, fontweight="bold")
+        ax.set_title(f"{p_level * 100:.1f}%", fontsize=9, fontweight="bold")
         ax.set_xticks([]); ax.set_yticks([])
         ax.set_xlim(xlim); ax.set_ylim(ylim)
         for spine in ax.spines.values():
@@ -116,17 +110,31 @@ def generate_curated_tsne_grid(
     for ax in axes_flat[n_stages:]:
         ax.axis("off")
 
-    handles = [mpatches.Patch(color=CLASS_COLORS[c], label=c) for c in CURATED_CLASSES]
+    # Legend organized by coordinate group -- shows the hue-family
+    # structure directly (one legend "row" per group, shades within it),
+    # rather than a flat 33-entry alphabetical list.
+    handles = []
+    labels_list = []
+    for group, members in CURATED_TAXONOMY.items():
+        handles.append(mpatches.Patch(color="white", alpha=0))  # spacer/header
+        labels_list.append(f"— {group} —")
+        for m in members:
+            handles.append(mpatches.Patch(color=class_colors[m]))
+            labels_list.append(m)
+
     fig.legend(
-        handles=handles, loc="lower center", ncol=5, fontsize=9,
-        frameon=False, bbox_to_anchor=(0.5, -0.02),
-    )
-    fig.suptitle(
-        f"Joint Embedding Space t-SNE Across Pruning Levels ({scenario} scenario, curated 10-class subset)",
-        fontsize=14, fontweight="bold", y=1.01,
+        handles, labels_list, loc="center left", bbox_to_anchor=(1.0, 0.5),
+        fontsize=7, frameon=False, ncol=1, title="Coordinate Group / Species",
+        title_fontsize=8,
     )
 
-    plt.tight_layout(rect=[0, 0.05, 1, 0.97])
+    fig.suptitle(
+        f"Joint Embedding Space t-SNE Across All Pruning Levels ({scenario} scenario)\n"
+        "Color = coordinate group (hue family) + specific breed/species (shade)",
+        fontsize=13, fontweight="bold", y=1.01,
+    )
+
+    plt.tight_layout(rect=[0, 0, 0.85, 0.97])
     save_path = os.path.join(output_dir, "tsne_curated.png")
     plt.savefig(save_path, dpi=200, bbox_inches="tight")
     plt.close()

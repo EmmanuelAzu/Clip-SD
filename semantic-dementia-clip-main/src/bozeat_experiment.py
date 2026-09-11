@@ -59,6 +59,7 @@ def run_bozeat_experiment(
     harness,
     target_prompts: list[str],
     pruning_levels: list[float],
+    display_prompts: list[str] | None = None,
     display_pruning_levels: list[float] | None = None,
     output_dir: str | None = None,
 ) -> tuple[str, str]:
@@ -68,11 +69,22 @@ def run_bozeat_experiment(
     already restricted to the curated subset (JointSpaceEvaluator(
     restrict_classes=CURATED_CLASSES)) for this to be fast and meaningful.
 
+    display_prompts: the full retrieval CURVE covers every prompt in
+    target_prompts (cheap regardless of count, since the candidate pool is
+    small), but the qualitative image GRID needs a small row count to stay
+    readable -- pass a representative subset here (e.g. one breed per
+    coordinate group) to control the grid's size independently of how many
+    prompts are actually being evaluated. Defaults to all of
+    target_prompts if not given.
+
     Returns (csv_path, image_grid_path).
     """
     if output_dir is None:
         output_dir = os.path.join(PROJECT_ROOT, "data", "results", "bozeat_experiment")
     os.makedirs(output_dir, exist_ok=True)
+
+    if display_prompts is None:
+        display_prompts = target_prompts
 
     if display_pruning_levels is None:
         # A readable subset for the qualitative image grid -- the full
@@ -128,29 +140,35 @@ def run_bozeat_experiment(
     print(f"[+] Bozeat retrieval results saved to: {csv_path}")
 
     _plot_retrieval_curve(results_df, target_prompts, output_dir)
-    grid_path = _plot_image_grid(results_df, target_prompts, display_pruning_levels, output_dir)
+    grid_path = _plot_image_grid(results_df, display_prompts, display_pruning_levels, output_dir)
 
     return csv_path, grid_path
 
 
 def _plot_retrieval_curve(results_df: pd.DataFrame, target_prompts: list[str], output_dir: str) -> str:
     """Full-resolution (every pruning level) per-class retrieval accuracy
-    and mean confidence, plus the aggregate across all 10 classes.
+    and mean confidence, plus the aggregate across all classes. Colors
+    use the same coordinate-group hue-family scheme as the tSNE plot
+    (src/curated_config.py::build_class_colors) so a class's color is
+    consistent across every figure in the pipeline.
     """
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 5.5), dpi=200)
-    cmap = plt.get_cmap("tab10")
+    from src.curated_config import build_class_colors
+    class_colors = build_class_colors()
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6), dpi=200)
 
     agg_acc = results_df.groupby("pruning_level")["correct"].mean()
     agg_conf = results_df.groupby("pruning_level")["top1_similarity"].mean()
 
-    for i, prompt in enumerate(target_prompts):
+    for prompt in target_prompts:
+        color = class_colors.get(prompt, "#888888")
         sub = results_df[results_df["prompt"] == prompt].sort_values("pruning_level")
         ax1.plot(sub["pruning_level"] * 100, sub["correct"].astype(float),
-                  color=cmap(i), alpha=0.55, linewidth=1.2)
+                  color=color, alpha=0.6, linewidth=1.1)
         ax2.plot(sub["pruning_level"] * 100, sub["top1_similarity"],
-                  color=cmap(i), alpha=0.55, linewidth=1.2, label=prompt)
+                  color=color, alpha=0.6, linewidth=1.1, label=prompt)
 
-    ax1.plot(agg_acc.index * 100, agg_acc.values, color="black", linewidth=3, label="Mean (all 10 classes)")
+    ax1.plot(agg_acc.index * 100, agg_acc.values, color="black", linewidth=3, label="Mean (all classes)")
     ax2.plot(agg_conf.index * 100, agg_conf.values, color="black", linewidth=3, linestyle="--")
 
     ax1.set_xlabel("Pruning Level (%)"); ax1.set_ylabel("Retrieval Correct (1/0)")
@@ -159,7 +177,10 @@ def _plot_retrieval_curve(results_df: pd.DataFrame, target_prompts: list[str], o
 
     ax2.set_xlabel("Pruning Level (%)"); ax2.set_ylabel("Top-1 Cosine Similarity")
     ax2.set_title("Retrieval Confidence per Class", fontsize=12, fontweight="bold")
-    ax2.legend(fontsize=6.5, ncol=2); ax2.grid(alpha=0.3)
+    # Always include the legend (per explicit request), even with many
+    # classes -- small font, multi-column, so it stays usable rather than
+    # dropped for tidiness.
+    ax2.legend(fontsize=5.5, ncol=3, loc="upper right"); ax2.grid(alpha=0.3)
 
     plt.tight_layout()
     save_path = os.path.join(output_dir, "bozeat_retrieval_curve.png")

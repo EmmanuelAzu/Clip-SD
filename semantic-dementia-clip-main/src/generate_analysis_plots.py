@@ -27,96 +27,113 @@ def _normalize_columns(df):
     return df_copy
 
 
-def plot_category_breakdown_suite(df, output_dir=None):
-    """THE cross-category plot: Top-1 accuracy trajectory + a proportion-based
-    clinical error-taxonomy heatmap (Coordinate/Superordinate/Domain
-    Error/Domain Collapse) across pruning levels.
-
-    NOTE: previously plotted a "Vision CKA" line (now removed -- CKA
-    computation was cut from run_eval as out-of-scope for the current
-    focused pipeline) and a decorative, non-empirical "Expected Theory
-    Bound" dashed curve (removed -- it wasn't derived from anything, just
-    a quadratic decay placeholder). The heatmap previously showed raw
-    error COUNTS with annotation labels that visually overlapped once
-    there were more than a handful of pruning-level columns; it now shows
-    PROPORTIONS (bounded 0-1, comparable across runs with different
-    dataset sizes) with annotation font scaled down and made optional for
-    wide grids.
+def plot_accuracy_curve(df, output_dir=None):
+    """Top-1/Top-5/Top-10 specific accuracy, all three on one plot, vs.
+    pruning level. Split out from the old combined
+    plot_category_breakdown_suite (which crammed an accuracy line and an
+    error-taxonomy heatmap into one untidy two-panel figure) into its own
+    standalone plot per explicit request.
     """
     if output_dir is None:
         output_dir = os.path.join(PROJECT_ROOT, "data", "results")
-
     os.makedirs(output_dir, exist_ok=True)
     df = _normalize_columns(df)
 
     p_col = "Pruning_Level" if "Pruning_Level" in df.columns else "pruning_level"
     prune_pcts = [p * 100 for p in df[p_col]]
 
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
+    fig, ax = plt.subplots(figsize=(9, 6), dpi=200)
 
-    # Panel 1: Top-1 Specific Accuracy
-    acc_col = next(
-        (c for c in ["top1_specific_acc", "i2t_top1", "Correct"] if c in df.columns),
-        None,
-    )
-    if acc_col == "Correct":
-        total = df[["Correct", "Coordinate Error", "Superordinate Error", "Domain Error", "Domain Collapse"]].sum(axis=1)
-        acc_series = df["Correct"] / total
-    elif acc_col is not None:
-        acc_series = df[acc_col]
-    else:
-        acc_series = None
-
-    if acc_series is not None:
-        ax1.plot(
-            prune_pcts, acc_series, marker="o", color="#1f77b4",
-            linewidth=2.5, label="Top-1 Specific Accuracy",
-        )
-
-    ax1.set_xlabel("Pruning Level (%)", fontsize=11)
-    ax1.set_ylabel("Accuracy", fontsize=11)
-    ax1.set_title("Top-1 Accuracy vs. Pruning Level", fontsize=13, fontweight="bold")
-    ax1.grid(True, linestyle="--", alpha=0.5)
-    ax1.legend(loc="lower left", frameon=True)
-    ax1.set_ylim(-0.02, 1.02)
-
-    # Panel 2: Error Taxonomy Heatmap (proportions, not raw counts)
-    err_cols = [
-        c for c in [
-            "coordinate error", "superordinate error", "domain error", "domain collapse",
-        ] if c in df.columns
+    series_specs = [
+        ("top1_specific_acc", "Top-1 Accuracy", "#1f77b4", "o"),
+        ("top5_specific_acc", "Top-5 Accuracy", "#ff7f0e", "s"),
+        ("top10_specific_acc", "Top-10 Accuracy", "#2ca02c", "^"),
     ]
+    plotted_any = False
+    for col, label, color, marker in series_specs:
+        if col in df.columns:
+            ax.plot(
+                prune_pcts, df[col], marker=marker, markersize=4,
+                color=color, linewidth=2.2, label=label,
+            )
+            plotted_any = True
 
-    if err_cols:
-        err_sum = df[err_cols].sum(axis=1)
-        # total_samples derived from: err_sum = total * (1 - accuracy)
-        if acc_series is not None:
-            total_samples = err_sum / (1 - acc_series).replace(0, np.nan)
-        else:
-            total_samples = err_sum.replace(0, np.nan)
-        heatmap_data = (df[err_cols].div(total_samples, axis=0)).T
-        heatmap_data.columns = [f"{p:.1f}%" for p in prune_pcts]
-        heatmap_data.index = [c.replace("_", " ").title() for c in err_cols]
+    if not plotted_any and "i2t_top1" in df.columns:
+        ax.plot(prune_pcts, df["i2t_top1"], marker="o", color="#1f77b4",
+                 linewidth=2.5, label="Top-1 Accuracy")
 
-        n_cols = len(heatmap_data.columns)
-        show_annot = n_cols <= 20  # avoid unreadable overlap on wide grids
-        sns.heatmap(
-            heatmap_data,
-            annot=show_annot,
-            fmt=".2f",
-            annot_kws={"size": 7} if show_annot else None,
-            cmap="YlOrRd",
-            vmin=0, vmax=1,
-            ax=ax2,
-            cbar=True,
-            cbar_kws={"label": "Proportion of outcomes"},
-        )
-        ax2.set_title("Clinical Error Taxonomy (proportion of outcomes)", fontsize=13, fontweight="bold")
-        ax2.set_xlabel("Pruning Level (%)", fontsize=11)
-        ax2.tick_params(axis="x", labelsize=7, rotation=90)
+    ax.set_xlabel("Pruning Level (%)", fontsize=11)
+    ax.set_ylabel("Accuracy", fontsize=11)
+    ax.set_title("Top-1 / Top-5 / Top-10 Accuracy vs. Pruning Level", fontsize=13, fontweight="bold")
+    ax.grid(True, linestyle="--", alpha=0.5)
+    ax.legend(loc="lower left", frameon=True)
+    ax.set_ylim(-0.02, 1.02)
 
     plt.tight_layout()
-    save_path = os.path.join(output_dir, "cross_category_breakdown.png")
-    plt.savefig(save_path, dpi=300, bbox_inches="tight")
+    save_path = os.path.join(output_dir, "accuracy_curve.png")
+    plt.savefig(save_path, dpi=200, bbox_inches="tight")
     plt.close()
-    print(f"[+] Saved cross-category breakdown plot to: {save_path}")
+    print(f"[+] Saved accuracy curve to: {save_path}")
+    return save_path
+
+
+def plot_error_taxonomy_heatmap(df, output_dir=None):
+    """The clinical error-taxonomy heatmap (Coordinate/Superordinate/
+    Domain Error/Domain Collapse), on its own, standalone -- split out of
+    the old combined plot per explicit request. Proportions, not raw
+    counts (bounded 0-1, comparable across runs with different dataset
+    sizes); annotation labels shown only when the grid is narrow enough
+    to stay readable.
+    """
+    if output_dir is None:
+        output_dir = os.path.join(PROJECT_ROOT, "data", "results")
+    os.makedirs(output_dir, exist_ok=True)
+    df = _normalize_columns(df)
+
+    p_col = "Pruning_Level" if "Pruning_Level" in df.columns else "pruning_level"
+    prune_pcts = [p * 100 for p in df[p_col]]
+
+    acc_col = next((c for c in ["top1_specific_acc", "i2t_top1"] if c in df.columns), None)
+    acc_series = df[acc_col] if acc_col else None
+
+    err_cols = [
+        c for c in ["coordinate error", "superordinate error", "domain error", "domain collapse"]
+        if c in df.columns
+    ]
+    if not err_cols:
+        print("[!] No error-taxonomy columns found -- skipping heatmap.")
+        return None
+
+    err_sum = df[err_cols].sum(axis=1)
+    if acc_series is not None:
+        total_samples = err_sum / (1 - acc_series).replace(0, np.nan)
+    else:
+        total_samples = err_sum.replace(0, np.nan)
+    heatmap_data = (df[err_cols].div(total_samples, axis=0)).T
+    heatmap_data.columns = [f"{p:.1f}%" for p in prune_pcts]
+    heatmap_data.index = [c.replace("_", " ").title() for c in err_cols]
+
+    n_cols = len(heatmap_data.columns)
+    show_annot = n_cols <= 20
+    fig, ax = plt.subplots(figsize=(max(10, n_cols * 0.4), 5), dpi=200)
+    sns.heatmap(
+        heatmap_data,
+        annot=show_annot,
+        fmt=".2f",
+        annot_kws={"size": 7} if show_annot else None,
+        cmap="YlOrRd",
+        vmin=0, vmax=1,
+        ax=ax,
+        cbar=True,
+        cbar_kws={"label": "Proportion of outcomes"},
+    )
+    ax.set_title("Clinical Error Taxonomy (proportion of outcomes)", fontsize=13, fontweight="bold")
+    ax.set_xlabel("Pruning Level (%)", fontsize=11)
+    ax.tick_params(axis="x", labelsize=7, rotation=90)
+
+    plt.tight_layout()
+    save_path = os.path.join(output_dir, "error_taxonomy_heatmap.png")
+    plt.savefig(save_path, dpi=200, bbox_inches="tight")
+    plt.close()
+    print(f"[+] Saved error taxonomy heatmap to: {save_path}")
+    return save_path

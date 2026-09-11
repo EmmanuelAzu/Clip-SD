@@ -9,8 +9,8 @@ if PROJECT_ROOT not in sys.path:
     sys.path.append(PROJECT_ROOT)
 
 from src.joint_evaluator import JointSpaceEvaluator
-from src.generate_analysis_plots import plot_category_breakdown_suite
-from src.curated_config import CURATED_CLASSES, PRUNING_LEVELS_FOCUSED
+from src.generate_analysis_plots import plot_accuracy_curve, plot_error_taxonomy_heatmap
+from src.curated_config import CURATED_CLASSES, PRUNING_LEVELS_FOCUSED, IMAGES_PER_CLASS
 
 
 def _plot_scenario_comparison(df: pd.DataFrame, output_dir: str) -> None:
@@ -80,6 +80,7 @@ def run_joint_pipeline(
     evaluator = JointSpaceEvaluator(
         restrict_classes=curated_classes,
         balance_taxonomically=True,
+        fixed_samples_per_class=IMAGES_PER_CLASS,
     )
 
     print("\n[*] Running JOINT scenario (both encoders pruned)...")
@@ -102,9 +103,11 @@ def run_joint_pipeline(
     print(f"[+] Scenario comparison metrics saved to:\n    {scenario_csv}")
     _plot_scenario_comparison(scenario_comparison_df, output_dir)
 
-    # THE cross-category plot (accuracy + 4-tier clinical error heatmap),
-    # computed from the joint scenario.
-    plot_category_breakdown_suite(joint_df, output_dir=output_dir)
+    # THE cross-category plots: (1) Top-1/5/10 accuracy vs pruning, and
+    # (2) the 4-tier clinical error-taxonomy heatmap -- now two separate,
+    # clean figures rather than one crowded two-panel plot.
+    plot_accuracy_curve(joint_df, output_dir=output_dir)
+    plot_error_taxonomy_heatmap(joint_df, output_dir=output_dir)
 
     print("\n[+] Core evaluation pipeline complete.")
     return csv_path
