@@ -30,7 +30,7 @@ Orange,0.0,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-upd
 Banana,0.0,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_119.JPEG,True,0.27573251724243164
 Pomegranate,0.0,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_134.JPEG,True,0.26069045066833496
 Acorn,0.0,Acorn,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/acorn_n12267677_n12267677_201.JPEG,True,0.27667081356048584
-Frying Pan,0.0,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_227.JPEG,False,0.23178978264331818
+Frying Pan,0.0,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.27337950468063354
 Teapot,0.0,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_155.JPEG,True,0.27641013264656067
 German Shepherd,0.025,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.30768758058547974
 Golden Retriever,0.025,Golden Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/golden_retriever_n02099601_n02099601_174.JPEG,True,0.2822796702384949
@@ -63,7 +63,7 @@ Orange,0.025,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-u
 Banana,0.025,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_119.JPEG,True,0.275906503200531
 Pomegranate,0.025,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_134.JPEG,True,0.26123490929603577
 Acorn,0.025,Acorn,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/acorn_n12267677_n12267677_201.JPEG,True,0.27719587087631226
-Frying Pan,0.025,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_227.JPEG,False,0.23279045522212982
+Frying Pan,0.025,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.27442237734794617
 Teapot,0.025,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_155.JPEG,True,0.275581032037735
 German Shepherd,0.05,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.306940495967865
 Golden Retriever,0.05,Golden Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/golden_retriever_n02099601_n02099601_174.JPEG,True,0.2808636724948883
@@ -96,7 +96,7 @@ Orange,0.05,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-up
 Banana,0.05,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_119.JPEG,True,0.2753239870071411
 Pomegranate,0.05,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_134.JPEG,True,0.26031914353370667
 Acorn,0.05,Acorn,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/acorn_n12267677_n12267677_201.JPEG,True,0.2743344306945801
-Frying Pan,0.05,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_227.JPEG,False,0.232728511095047
+Frying Pan,0.05,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.27626943588256836
 Teapot,0.05,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_155.JPEG,True,0.27533021569252014
 German Shepherd,0.075,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.30711084604263306
 Golden Retriever,0.075,Golden Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/golden_retriever_n02099601_n02099601_174.JPEG,True,0.2798098623752594
@@ -129,7 +129,7 @@ Orange,0.075,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-u
 Banana,0.075,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_119.JPEG,True,0.2743406593799591
 Pomegranate,0.075,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_134.JPEG,True,0.25998854637145996
 Acorn,0.075,Acorn,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/acorn_n12267677_n12267677_201.JPEG,True,0.2708999812602997
-Frying Pan,0.075,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_227.JPEG,False,0.22998586297035217
+Frying Pan,0.075,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.2762312591075897
 Teapot,0.075,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_155.JPEG,True,0.27552878856658936
 German Shepherd,0.1,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.3079047203063965
 Golden Retriever,0.1,Golden Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/golden_retriever_n02099601_n02099601_174.JPEG,True,0.2788815498352051
@@ -162,7 +162,7 @@ Orange,0.1,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-upd
 Banana,0.1,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_119.JPEG,True,0.2802298963069916
 Pomegranate,0.1,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_220.JPEG,True,0.26718276739120483
 Acorn,0.1,Acorn,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/acorn_n12267677_n12267677_201.JPEG,True,0.2715216875076294
-Frying Pan,0.1,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_227.JPEG,False,0.22536802291870117
+Frying Pan,0.1,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.2726128101348877
 Teapot,0.1,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_155.JPEG,True,0.2792905569076538
 German Shepherd,0.125,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.3017549514770508
 Golden Retriever,0.125,Golden Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/golden_retriever_n02099601_n02099601_174.JPEG,True,0.2768327295780182
@@ -195,7 +195,7 @@ Orange,0.125,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-u
 Banana,0.125,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_119.JPEG,True,0.28146225214004517
 Pomegranate,0.125,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_220.JPEG,True,0.27842631936073303
 Acorn,0.125,Acorn,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/acorn_n12267677_n12267677_201.JPEG,True,0.2762489914894104
-Frying Pan,0.125,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_142.JPEG,False,0.2275908887386322
+Frying Pan,0.125,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_213.JPEG,True,0.2799266576766968
 Teapot,0.125,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_155.JPEG,True,0.28156334161758423
 German Shepherd,0.15,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.29953062534332275
 Golden Retriever,0.15,Golden Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/golden_retriever_n02099601_n02099601_174.JPEG,True,0.28180861473083496
@@ -228,7 +228,7 @@ Orange,0.15,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-up
 Banana,0.15,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_108.JPEG,True,0.2933737337589264
 Pomegranate,0.15,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_220.JPEG,True,0.2866581678390503
 Acorn,0.15,Acorn,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/acorn_n12267677_n12267677_249.JPEG,True,0.2779008746147156
-Frying Pan,0.15,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_142.JPEG,False,0.23327156901359558
+Frying Pan,0.15,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_213.JPEG,True,0.2861184775829315
 Teapot,0.15,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_155.JPEG,True,0.28909775614738464
 German Shepherd,0.175,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.2922059893608093
 Golden Retriever,0.175,Golden Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/golden_retriever_n02099601_n02099601_174.JPEG,True,0.27804163098335266
@@ -261,7 +261,7 @@ Orange,0.175,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-u
 Banana,0.175,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_108.JPEG,True,0.30412086844444275
 Pomegranate,0.175,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_220.JPEG,True,0.2936708629131317
 Acorn,0.175,Acorn,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/acorn_n12267677_n12267677_249.JPEG,True,0.28256627917289734
-Frying Pan,0.175,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_142.JPEG,False,0.24068573117256165
+Frying Pan,0.175,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.30084431171417236
 Teapot,0.175,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_155.JPEG,True,0.3003808856010437
 German Shepherd,0.2,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.29106128215789795
 Golden Retriever,0.2,Golden Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/golden_retriever_n02099601_n02099601_174.JPEG,True,0.26815086603164673
@@ -294,7 +294,7 @@ Orange,0.2,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-upd
 Banana,0.2,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_108.JPEG,True,0.31160977482795715
 Pomegranate,0.2,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_220.JPEG,True,0.2973511815071106
 Acorn,0.2,Acorn,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/acorn_n12267677_n12267677_249.JPEG,True,0.2821665406227112
-Frying Pan,0.2,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_142.JPEG,False,0.23679381608963013
+Frying Pan,0.2,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.2995521128177643
 Teapot,0.2,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_155.JPEG,True,0.3048199415206909
 German Shepherd,0.225,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.2944670617580414
 Golden Retriever,0.225,Golden Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/golden_retriever_n02099601_n02099601_174.JPEG,True,0.26205578446388245
@@ -327,7 +327,7 @@ Orange,0.225,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-u
 Banana,0.225,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_108.JPEG,True,0.31077131628990173
 Pomegranate,0.225,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_220.JPEG,True,0.2977422773838043
 Acorn,0.225,Acorn,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/acorn_n12267677_n12267677_249.JPEG,True,0.2702048122882843
-Frying Pan,0.225,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_142.JPEG,False,0.22877761721611023
+Frying Pan,0.225,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.29675209522247314
 Teapot,0.225,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_155.JPEG,True,0.30210018157958984
 German Shepherd,0.25,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.29491209983825684
 Golden Retriever,0.25,Golden Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/golden_retriever_n02099601_n02099601_174.JPEG,True,0.2560395896434784
@@ -360,7 +360,7 @@ Orange,0.25,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-up
 Banana,0.25,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_108.JPEG,True,0.2997494637966156
 Pomegranate,0.25,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_231.JPEG,True,0.29240965843200684
 Acorn,0.25,Lemon,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/lemon_n07749582_n07749582_143.JPEG,False,0.25850582122802734
-Frying Pan,0.25,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_213.JPEG,False,0.22395798563957214
+Frying Pan,0.25,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.2818782329559326
 Teapot,0.25,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_155.JPEG,True,0.294594407081604
 German Shepherd,0.275,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.28277847170829773
 Golden Retriever,0.275,Labrador Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/labrador_retriever_n02099712_n02099712_222.JPEG,False,0.25425949692726135
@@ -393,7 +393,7 @@ Orange,0.275,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-u
 Banana,0.275,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_108.JPEG,True,0.282145619392395
 Pomegranate,0.275,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_231.JPEG,True,0.2770296335220337
 Acorn,0.275,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_137.JPEG,False,0.24344977736473083
-Frying Pan,0.275,Acorn,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/acorn_n12267677_n12267677_249.JPEG,False,0.21088796854019165
+Frying Pan,0.275,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.25613343715667725
 Teapot,0.275,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_155.JPEG,True,0.27588534355163574
 German Shepherd,0.3,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.2740744948387146
 Golden Retriever,0.3,Labrador Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/labrador_retriever_n02099712_n02099712_222.JPEG,False,0.25271618366241455
@@ -426,7 +426,7 @@ Orange,0.3,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-upd
 Banana,0.3,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_108.JPEG,True,0.2752828001976013
 Pomegranate,0.3,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_231.JPEG,True,0.2652188539505005
 Acorn,0.3,Acorn,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/acorn_n12267677_n12267677_249.JPEG,True,0.2300092577934265
-Frying Pan,0.3,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_226.JPEG,False,0.21323376893997192
+Frying Pan,0.3,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_240.JPEG,True,0.25208792090415955
 Teapot,0.3,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_107.JPEG,True,0.2520913779735565
 German Shepherd,0.325,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.2547146677970886
 Golden Retriever,0.325,Labrador Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/labrador_retriever_n02099712_n02099712_222.JPEG,False,0.24547186493873596
@@ -459,7 +459,7 @@ Orange,0.325,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-u
 Banana,0.325,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_187.JPEG,True,0.24076434969902039
 Pomegranate,0.325,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_231.JPEG,True,0.241512268781662
 Acorn,0.325,Monarch Butterfly,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/monarch_butterfly_n02279972_n02279972_212.JPEG,False,0.22241529822349548
-Frying Pan,0.325,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_226.JPEG,False,0.19646933674812317
+Frying Pan,0.325,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_240.JPEG,True,0.22874236106872559
 Teapot,0.325,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_155.JPEG,True,0.22118708491325378
 German Shepherd,0.35,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.23108232021331787
 Golden Retriever,0.35,Labrador Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/labrador_retriever_n02099712_n02099712_222.JPEG,False,0.22999218106269836
@@ -492,7 +492,7 @@ Orange,0.35,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-up
 Banana,0.35,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_187.JPEG,True,0.2289074957370758
 Pomegranate,0.35,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_231.JPEG,True,0.21234317123889923
 Acorn,0.35,Monarch Butterfly,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/monarch_butterfly_n02279972_n02279972_212.JPEG,False,0.19851164519786835
-Frying Pan,0.35,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_226.JPEG,False,0.18896521627902985
+Frying Pan,0.35,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_240.JPEG,True,0.2127046138048172
 Teapot,0.35,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_107.JPEG,True,0.20035728812217712
 German Shepherd,0.375,German Shepherd,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dog_n02106662_n02106662_145.JPEG,True,0.19842533767223358
 Golden Retriever,0.375,Labrador Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/labrador_retriever_n02099712_n02099712_222.JPEG,False,0.23692962527275085
@@ -525,7 +525,7 @@ Orange,0.375,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-u
 Banana,0.375,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_187.JPEG,True,0.20872762799263
 Pomegranate,0.375,Pomegranate,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/pomegranate_n07768694_n07768694_231.JPEG,True,0.18556827306747437
 Acorn,0.375,Lemon,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/lemon_n07749582_n07749582_165.JPEG,False,0.18623775243759155
-Frying Pan,0.375,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_142.JPEG,False,0.1856880486011505
+Frying Pan,0.375,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_111.JPEG,True,0.19762684404850006
 Teapot,0.375,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_107.JPEG,True,0.16262607276439667
 German Shepherd,0.4,Labrador Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/labrador_retriever_n02099712_n02099712_173.JPEG,False,0.19366489350795746
 Golden Retriever,0.4,Labrador Retriever,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/labrador_retriever_n02099712_n02099712_222.JPEG,False,0.21902495622634888
@@ -558,7 +558,7 @@ Orange,0.4,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-upd
 Banana,0.4,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_187.JPEG,True,0.17708344757556915
 Pomegranate,0.4,Lemon,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/lemon_n07749582_n07749582_188.JPEG,False,0.17276917397975922
 Acorn,0.4,Lemon,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/lemon_n07749582_n07749582_165.JPEG,False,0.1622510403394699
-Frying Pan,0.4,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_142.JPEG,False,0.16598668694496155
+Frying Pan,0.4,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_111.JPEG,True,0.17746952176094055
 Teapot,0.4,Teapot,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/teapot_n04398044_n04398044_107.JPEG,True,0.13815638422966003
 German Shepherd,0.425,Standard Poodle,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/standard_poodle_n02113799_n02113799_169.JPEG,False,0.18177975714206696
 Golden Retriever,0.425,Standard Poodle,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/standard_poodle_n02113799_n02113799_169.JPEG,False,0.19403287768363953
@@ -591,7 +591,7 @@ Orange,0.425,Lemon,/home/vmuser/Music/research_project/semantic-dementia-clip-up
 Banana,0.425,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_187.JPEG,True,0.14452245831489563
 Pomegranate,0.425,Lemon,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/lemon_n07749582_n07749582_188.JPEG,False,0.1634393185377121
 Acorn,0.425,Lemon,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/lemon_n07749582_n07749582_188.JPEG,False,0.150602325797081
-Frying Pan,0.425,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_168.JPEG,False,0.15363426506519318
+Frying Pan,0.425,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_111.JPEG,True,0.17533919215202332
 Teapot,0.425,Banana,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/banana_n07753592_n07753592_168.JPEG,False,0.12955287098884583
 German Shepherd,0.45,Standard Poodle,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/standard_poodle_n02113799_n02113799_169.JPEG,False,0.11308006197214127
 Golden Retriever,0.45,Standard Poodle,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/standard_poodle_n02113799_n02113799_169.JPEG,False,0.11760181933641434
@@ -621,10 +621,10 @@ Tailed Frog,0.45,Bullfrog,/home/vmuser/Music/research_project/semantic-dementia-
 European Fire Salamander,0.45,Lemon,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/lemon_n07749582_n07749582_143.JPEG,False,0.13986362516880035
 Lemon,0.45,Lemon,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/lemon_n07749582_n07749582_188.JPEG,True,0.13815392553806305
 Orange,0.45,Lemon,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/lemon_n07749582_n07749582_188.JPEG,False,0.12072177976369858
-Banana,0.45,Lemon,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/lemon_n07749582_n07749582_143.JPEG,False,0.09189864993095398
+Banana,0.45,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_111.JPEG,False,0.09611037373542786
 Pomegranate,0.45,Lemon,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/lemon_n07749582_n07749582_188.JPEG,False,0.12851178646087646
 Acorn,0.45,Lemon,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/lemon_n07749582_n07749582_188.JPEG,False,0.11918886005878448
-Frying Pan,0.45,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_194.JPEG,False,0.12191417813301086
+Frying Pan,0.45,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/frying_pan_n03400231_n03400231_111.JPEG,True,0.14555643498897552
 Teapot,0.45,Albatross,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/albatross_n02058221_n02058221_196.JPEG,False,0.10740756243467331
 German Shepherd,0.475,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_142.JPEG,False,0.10592418164014816
 Golden Retriever,0.475,Orange,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/orange_n07747607_n07747607_142.JPEG,False,0.11016015708446503
@@ -703,7 +703,7 @@ Egyptian Cat,0.525,Monarch Butterfly,/home/vmuser/Music/research_project/semanti
 Persian Cat,0.525,Tailed Frog,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/tailed_frog_n01644900_n01644900_202.JPEG,False,0.08916979283094406
 Cougar,0.525,Dragonfly,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dragonfly_n02268443_n02268443_227.JPEG,False,0.07951971888542175
 Lion,0.525,Dragonfly,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dragonfly_n02268443_n02268443_227.JPEG,False,0.08008194714784622
-Monarch Butterfly,0.525,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/fryingpan_n03404251_n03404251_108.JPEG,False,0.09593930840492249
+Monarch Butterfly,0.525,European Fire Salamander,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/european_fire_salamander_n01629819_n01629819_215.JPEG,False,0.09556969255208969
 Sulphur Butterfly,0.525,Monarch Butterfly,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/monarch_butterfly_n02279972_n02279972_173.JPEG,False,0.08799299597740173
 Ladybug,0.525,Monarch Butterfly,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/monarch_butterfly_n02279972_n02279972_173.JPEG,False,0.08898099511861801
 Dragonfly,0.525,Dragonfly,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/dragonfly_n02268443_n02268443_227.JPEG,True,0.08481508493423462
@@ -743,7 +743,7 @@ Dragonfly,0.55,Monarch Butterfly,/home/vmuser/Music/research_project/semantic-de
 Mantis,0.55,Monarch Butterfly,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/monarch_butterfly_n02279972_n02279972_173.JPEG,False,0.06840860098600388
 Albatross,0.55,Monarch Butterfly,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/monarch_butterfly_n02279972_n02279972_173.JPEG,False,0.06857931613922119
 Goose,0.55,Monarch Butterfly,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/monarch_butterfly_n02279972_n02279972_173.JPEG,False,0.06978332251310349
-Black Stork,0.55,Frying Pan,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/fryingpan_n03404251_n03404251_186.JPEG,False,0.06880047917366028
+Black Stork,0.55,Egyptian Cat,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/egyptian_cat_n02124075_n02124075_189.JPEG,False,0.06877938657999039
 King Penguin,0.55,Monarch Butterfly,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/monarch_butterfly_n02279972_n02279972_173.JPEG,False,0.07078160345554352
 Chimpanzee,0.55,Tailed Frog,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/tailed_frog_n01644900_n01644900_202.JPEG,False,0.06798016279935837
 Orangutan,0.55,Monarch Butterfly,/home/vmuser/Music/research_project/semantic-dementia-clip-updated/Clip-SD/semantic-dementia-clip-main/data/images/monarch_butterfly_n02279972_n02279972_173.JPEG,False,0.06780755519866943
