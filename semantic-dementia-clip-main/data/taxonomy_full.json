@@ -496,13 +496,6 @@
         "specific": "Mushroom",
         "typicality": "Typical"
     },
-    "n03404251": {
-        "domain": "Non-Living",
-        "superordinate": "Indoor",
-        "coordinate": "Kitchen Objects",
-        "specific": "Frying Pan",
-        "typicality": "Typical"
-    },
     "n04398044": {
         "domain": "Non-Living",
         "superordinate": "Indoor",
@@ -536,6 +529,13 @@
         "superordinate": "Outdoor",
         "coordinate": "Gardening Tools",
         "specific": "Lawnmower",
+        "typicality": "Typical"
+    },
+    "n03400231": {
+        "domain": "Non-Living",
+        "superordinate": "Indoor",
+        "coordinate": "Kitchen Objects",
+        "specific": "Frying Pan",
         "typicality": "Typical"
     }
 }
