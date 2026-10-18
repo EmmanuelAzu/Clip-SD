@@ -1,0 +1,1024 @@
+prompt,pruning_level,retrieved_concept,retrieved_img_path,correct,top1_similarity
+German Shepherd,0.0,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_125.JPEG,True,0.2770441174507141
+Golden Retriever,0.0,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,True,0.3016010522842407
+Labrador Retriever,0.0,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.30284297466278076
+Chihuahua,0.0,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.2765229642391205
+Standard Poodle,0.0,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,True,0.3197219967842102
+Yorkshire Terrier,0.0,Yorkshire Terrier,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/yorkshire_terrier_n02094433_n02094433_184.JPEG,True,0.2932193875312805
+Tabby Cat,0.0,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.2898586392402649
+Egyptian Cat,0.0,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_184.JPEG,True,0.2900131046772003
+Persian Cat,0.0,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_111.JPEG,True,0.2628461420536041
+Cougar,0.0,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.29938066005706787
+Lion,0.0,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.2832471430301666
+Monarch Butterfly,0.0,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_125.JPEG,True,0.3110113739967346
+Sulphur Butterfly,0.0,Sulphur Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/sulphur_butterfly_n02281406_n02281406_125.JPEG,True,0.3479957580566406
+Ladybug,0.0,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.3040761351585388
+Dragonfly,0.0,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_111.JPEG,True,0.2917306125164032
+Mantis,0.0,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_240.JPEG,True,0.25126898288726807
+Albatross,0.0,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,True,0.25414979457855225
+Goose,0.0,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.29503393173217773
+Black Stork,0.0,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.3394078016281128
+King Penguin,0.0,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_240.JPEG,True,0.31929802894592285
+Chimpanzee,0.0,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_240.JPEG,True,0.2945009171962738
+Orangutan,0.0,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.29219916462898254
+Baboon,0.0,Baboon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/baboon_n02486410_n02486410_125.JPEG,True,0.2776879668235779
+Bullfrog,0.0,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,True,0.30150142312049866
+Tailed Frog,0.0,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,False,0.3111315071582794
+European Fire Salamander,0.0,European Fire Salamander,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/european_fire_salamander_n01629819_n01629819_184.JPEG,True,0.33541402220726013
+Lemon,0.0,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.2996121644973755
+Orange,0.0,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,True,0.26655784249305725
+Banana,0.0,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.30403387546539307
+Pomegranate,0.0,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_240.JPEG,True,0.2840619683265686
+Acorn,0.0,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_109.JPEG,False,0.2627888321876526
+Frying Pan,0.0,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.27337971329689026
+Teapot,0.0,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.2822156548500061
+German Shepherd,0.025,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_125.JPEG,True,0.27724921703338623
+Golden Retriever,0.025,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,True,0.30109113454818726
+Labrador Retriever,0.025,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.3031349778175354
+Chihuahua,0.025,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.2759266793727875
+Standard Poodle,0.025,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,True,0.3186378479003906
+Yorkshire Terrier,0.025,Yorkshire Terrier,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/yorkshire_terrier_n02094433_n02094433_184.JPEG,True,0.29381832480430603
+Tabby Cat,0.025,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.28947779536247253
+Egyptian Cat,0.025,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_184.JPEG,True,0.29092270135879517
+Persian Cat,0.025,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_111.JPEG,True,0.26308172941207886
+Cougar,0.025,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.2991994619369507
+Lion,0.025,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.2839697301387787
+Monarch Butterfly,0.025,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_125.JPEG,True,0.31027406454086304
+Sulphur Butterfly,0.025,Sulphur Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/sulphur_butterfly_n02281406_n02281406_125.JPEG,True,0.3482654392719269
+Ladybug,0.025,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.3043363392353058
+Dragonfly,0.025,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_111.JPEG,True,0.29170286655426025
+Mantis,0.025,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_240.JPEG,True,0.25305432081222534
+Albatross,0.025,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,True,0.25481659173965454
+Goose,0.025,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.2948734164237976
+Black Stork,0.025,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.338899701833725
+King Penguin,0.025,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_240.JPEG,True,0.3201058804988861
+Chimpanzee,0.025,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_240.JPEG,True,0.29531919956207275
+Orangutan,0.025,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.2927023470401764
+Baboon,0.025,Baboon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/baboon_n02486410_n02486410_125.JPEG,True,0.2775110602378845
+Bullfrog,0.025,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,True,0.30191782116889954
+Tailed Frog,0.025,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,False,0.31153997778892517
+European Fire Salamander,0.025,European Fire Salamander,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/european_fire_salamander_n01629819_n01629819_184.JPEG,True,0.3348296880722046
+Lemon,0.025,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.298903226852417
+Orange,0.025,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,True,0.266441285610199
+Banana,0.025,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.30399465560913086
+Pomegranate,0.025,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_240.JPEG,True,0.2848830819129944
+Acorn,0.025,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_109.JPEG,False,0.263692170381546
+Frying Pan,0.025,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.2744222581386566
+Teapot,0.025,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.2819896936416626
+German Shepherd,0.05,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_125.JPEG,True,0.2769937813282013
+Golden Retriever,0.05,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,True,0.2980259656906128
+Labrador Retriever,0.05,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.2998020648956299
+Chihuahua,0.05,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.2750551104545593
+Standard Poodle,0.05,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,True,0.31827303767204285
+Yorkshire Terrier,0.05,Yorkshire Terrier,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/yorkshire_terrier_n02094433_n02094433_184.JPEG,True,0.2910933196544647
+Tabby Cat,0.05,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.2889852523803711
+Egyptian Cat,0.05,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_184.JPEG,True,0.2881190776824951
+Persian Cat,0.05,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_111.JPEG,True,0.2632870078086853
+Cougar,0.05,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.2975843846797943
+Lion,0.05,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.28252071142196655
+Monarch Butterfly,0.05,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_125.JPEG,True,0.3096277713775635
+Sulphur Butterfly,0.05,Sulphur Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/sulphur_butterfly_n02281406_n02281406_125.JPEG,True,0.3467705249786377
+Ladybug,0.05,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.3031870126724243
+Dragonfly,0.05,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_111.JPEG,True,0.2900150716304779
+Mantis,0.05,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_240.JPEG,False,0.24859479069709778
+Albatross,0.05,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,True,0.2553021311759949
+Goose,0.05,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.29669615626335144
+Black Stork,0.05,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.33766794204711914
+King Penguin,0.05,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_240.JPEG,True,0.3196505308151245
+Chimpanzee,0.05,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_240.JPEG,True,0.29325079917907715
+Orangutan,0.05,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.29188790917396545
+Baboon,0.05,Baboon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/baboon_n02486410_n02486410_125.JPEG,True,0.27657759189605713
+Bullfrog,0.05,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,True,0.30085107684135437
+Tailed Frog,0.05,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,False,0.3107302486896515
+European Fire Salamander,0.05,European Fire Salamander,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/european_fire_salamander_n01629819_n01629819_184.JPEG,True,0.3325904607772827
+Lemon,0.05,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.30076706409454346
+Orange,0.05,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,True,0.2643023431301117
+Banana,0.05,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.30001357197761536
+Pomegranate,0.05,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_240.JPEG,True,0.28372541069984436
+Acorn,0.05,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_109.JPEG,False,0.26509472727775574
+Frying Pan,0.05,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.27626943588256836
+Teapot,0.05,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.2817997932434082
+German Shepherd,0.075,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_125.JPEG,True,0.2775720953941345
+Golden Retriever,0.075,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,True,0.29539090394973755
+Labrador Retriever,0.075,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.2945496439933777
+Chihuahua,0.075,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.27403250336647034
+Standard Poodle,0.075,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,True,0.32088929414749146
+Yorkshire Terrier,0.075,Yorkshire Terrier,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/yorkshire_terrier_n02094433_n02094433_184.JPEG,True,0.2902001142501831
+Tabby Cat,0.075,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.2869429588317871
+Egyptian Cat,0.075,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_184.JPEG,True,0.2842657268047333
+Persian Cat,0.075,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_111.JPEG,True,0.26041319966316223
+Cougar,0.075,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.2970111072063446
+Lion,0.075,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.2786056101322174
+Monarch Butterfly,0.075,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_111.JPEG,True,0.3133460283279419
+Sulphur Butterfly,0.075,Sulphur Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/sulphur_butterfly_n02281406_n02281406_125.JPEG,True,0.345682829618454
+Ladybug,0.075,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.3022004961967468
+Dragonfly,0.075,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_111.JPEG,True,0.2868070602416992
+Mantis,0.075,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_240.JPEG,True,0.2494574934244156
+Albatross,0.075,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,True,0.2568506598472595
+Goose,0.075,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.2975638508796692
+Black Stork,0.075,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.3348892331123352
+King Penguin,0.075,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_240.JPEG,True,0.31644123792648315
+Chimpanzee,0.075,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_240.JPEG,True,0.2905617952346802
+Orangutan,0.075,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.29574716091156006
+Baboon,0.075,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,False,0.2801615595817566
+Bullfrog,0.075,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,True,0.3014012277126312
+Tailed Frog,0.075,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,False,0.31050488352775574
+European Fire Salamander,0.075,European Fire Salamander,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/european_fire_salamander_n01629819_n01629819_184.JPEG,True,0.33200329542160034
+Lemon,0.075,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.3010055422782898
+Orange,0.075,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,True,0.26471462845802307
+Banana,0.075,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.2969038784503937
+Pomegranate,0.075,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_240.JPEG,True,0.28365761041641235
+Acorn,0.075,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_109.JPEG,False,0.2645910978317261
+Frying Pan,0.075,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.27623113989830017
+Teapot,0.075,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.28162500262260437
+German Shepherd,0.1,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_125.JPEG,True,0.2792978584766388
+Golden Retriever,0.1,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,True,0.2946155071258545
+Labrador Retriever,0.1,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.2900654375553131
+Chihuahua,0.1,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.27467209100723267
+Standard Poodle,0.1,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,True,0.32315054535865784
+Yorkshire Terrier,0.1,Yorkshire Terrier,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/yorkshire_terrier_n02094433_n02094433_184.JPEG,True,0.292011559009552
+Tabby Cat,0.1,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.28668132424354553
+Egyptian Cat,0.1,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_111.JPEG,False,0.2854677140712738
+Persian Cat,0.1,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_111.JPEG,True,0.26579728722572327
+Cougar,0.1,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.3002813458442688
+Lion,0.1,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.277208536863327
+Monarch Butterfly,0.1,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_111.JPEG,True,0.3157128095626831
+Sulphur Butterfly,0.1,Sulphur Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/sulphur_butterfly_n02281406_n02281406_125.JPEG,True,0.34657391905784607
+Ladybug,0.1,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.3061755299568176
+Dragonfly,0.1,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_111.JPEG,True,0.2883026897907257
+Mantis,0.1,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_240.JPEG,True,0.2602894902229309
+Albatross,0.1,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,True,0.2564443051815033
+Goose,0.1,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.2991829216480255
+Black Stork,0.1,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.34136560559272766
+King Penguin,0.1,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_240.JPEG,True,0.3143702447414398
+Chimpanzee,0.1,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_240.JPEG,True,0.29643121361732483
+Orangutan,0.1,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.29724639654159546
+Baboon,0.1,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,False,0.27953314781188965
+Bullfrog,0.1,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,True,0.2983377277851105
+Tailed Frog,0.1,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,False,0.3050556182861328
+European Fire Salamander,0.1,European Fire Salamander,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/european_fire_salamander_n01629819_n01629819_184.JPEG,True,0.3347136080265045
+Lemon,0.1,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.3020567297935486
+Orange,0.1,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,True,0.27583348751068115
+Banana,0.1,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.30166855454444885
+Pomegranate,0.1,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_240.JPEG,True,0.2873033583164215
+Acorn,0.1,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_109.JPEG,False,0.2676115036010742
+Frying Pan,0.1,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.2726128399372101
+Teapot,0.1,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.28839507699012756
+German Shepherd,0.125,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_125.JPEG,True,0.28088968992233276
+Golden Retriever,0.125,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,True,0.2894093096256256
+Labrador Retriever,0.125,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.2796454429626465
+Chihuahua,0.125,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.2754214107990265
+Standard Poodle,0.125,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,True,0.31855595111846924
+Yorkshire Terrier,0.125,Yorkshire Terrier,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/yorkshire_terrier_n02094433_n02094433_184.JPEG,True,0.2908058762550354
+Tabby Cat,0.125,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.2864152193069458
+Egyptian Cat,0.125,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_111.JPEG,False,0.2831934690475464
+Persian Cat,0.125,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_111.JPEG,True,0.2712392508983612
+Cougar,0.125,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.2954460382461548
+Lion,0.125,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.2764050364494324
+Monarch Butterfly,0.125,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_111.JPEG,True,0.3182257413864136
+Sulphur Butterfly,0.125,Sulphur Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/sulphur_butterfly_n02281406_n02281406_125.JPEG,True,0.33958137035369873
+Ladybug,0.125,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.3212129473686218
+Dragonfly,0.125,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_111.JPEG,True,0.29265883564949036
+Mantis,0.125,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_240.JPEG,True,0.274482786655426
+Albatross,0.125,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,False,0.26321282982826233
+Goose,0.125,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.3005143404006958
+Black Stork,0.125,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.34174656867980957
+King Penguin,0.125,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_240.JPEG,True,0.3104289770126343
+Chimpanzee,0.125,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,True,0.30548644065856934
+Orangutan,0.125,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.3045109808444977
+Baboon,0.125,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,False,0.2813187837600708
+Bullfrog,0.125,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,True,0.30240845680236816
+Tailed Frog,0.125,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,False,0.30999255180358887
+European Fire Salamander,0.125,European Fire Salamander,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/european_fire_salamander_n01629819_n01629819_184.JPEG,True,0.33750826120376587
+Lemon,0.125,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.2995482385158539
+Orange,0.125,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,True,0.2860313653945923
+Banana,0.125,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.3174892067909241
+Pomegranate,0.125,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_240.JPEG,True,0.2902316451072693
+Acorn,0.125,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_111.JPEG,False,0.27353984117507935
+Frying Pan,0.125,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_213.JPEG,True,0.27992671728134155
+Teapot,0.125,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.3017829656600952
+German Shepherd,0.15,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_125.JPEG,True,0.27780285477638245
+Golden Retriever,0.15,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,True,0.28487110137939453
+Labrador Retriever,0.15,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.27453911304473877
+Chihuahua,0.15,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.2784937620162964
+Standard Poodle,0.15,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,True,0.32065311074256897
+Yorkshire Terrier,0.15,Yorkshire Terrier,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/yorkshire_terrier_n02094433_n02094433_184.JPEG,True,0.2913564145565033
+Tabby Cat,0.15,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.2895413339138031
+Egyptian Cat,0.15,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_111.JPEG,False,0.2842915952205658
+Persian Cat,0.15,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_111.JPEG,True,0.2762468159198761
+Cougar,0.15,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.29936373233795166
+Lion,0.15,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.2834559381008148
+Monarch Butterfly,0.15,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_111.JPEG,True,0.3228878080844879
+Sulphur Butterfly,0.15,Sulphur Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/sulphur_butterfly_n02281406_n02281406_213.JPEG,True,0.34064483642578125
+Ladybug,0.15,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.33156871795654297
+Dragonfly,0.15,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_111.JPEG,True,0.30254119634628296
+Mantis,0.15,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_213.JPEG,True,0.2699795961380005
+Albatross,0.15,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,False,0.27998390793800354
+Goose,0.15,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.302293598651886
+Black Stork,0.15,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.3404512405395508
+King Penguin,0.15,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_240.JPEG,True,0.31211650371551514
+Chimpanzee,0.15,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,True,0.3124959170818329
+Orangutan,0.15,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.3104400932788849
+Baboon,0.15,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,False,0.2855745553970337
+Bullfrog,0.15,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,True,0.3051486015319824
+Tailed Frog,0.15,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,False,0.3122905492782593
+European Fire Salamander,0.15,European Fire Salamander,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/european_fire_salamander_n01629819_n01629819_184.JPEG,True,0.330159455537796
+Lemon,0.15,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.2878113389015198
+Orange,0.15,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,True,0.30453383922576904
+Banana,0.15,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.322004109621048
+Pomegranate,0.15,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_240.JPEG,True,0.2947138845920563
+Acorn,0.15,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_111.JPEG,False,0.2787533700466156
+Frying Pan,0.15,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_213.JPEG,True,0.28611844778060913
+Teapot,0.15,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.3090927302837372
+German Shepherd,0.175,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_125.JPEG,True,0.27559694647789
+Golden Retriever,0.175,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_111.JPEG,True,0.279596209526062
+Labrador Retriever,0.175,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_111.JPEG,False,0.2705641984939575
+Chihuahua,0.175,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.2779495120048523
+Standard Poodle,0.175,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,True,0.3156549334526062
+Yorkshire Terrier,0.175,Yorkshire Terrier,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/yorkshire_terrier_n02094433_n02094433_240.JPEG,True,0.28658902645111084
+Tabby Cat,0.175,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.2922845780849457
+Egyptian Cat,0.175,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_111.JPEG,False,0.2783626914024353
+Persian Cat,0.175,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_184.JPEG,False,0.268329918384552
+Cougar,0.175,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.29496628046035767
+Lion,0.175,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.28409942984580994
+Monarch Butterfly,0.175,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_111.JPEG,True,0.31510910391807556
+Sulphur Butterfly,0.175,Sulphur Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/sulphur_butterfly_n02281406_n02281406_213.JPEG,True,0.34085267782211304
+Ladybug,0.175,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.33316391706466675
+Dragonfly,0.175,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_111.JPEG,True,0.30359506607055664
+Mantis,0.175,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_240.JPEG,True,0.2666657865047455
+Albatross,0.175,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,False,0.2760414183139801
+Goose,0.175,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.3051947057247162
+Black Stork,0.175,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.32921990752220154
+King Penguin,0.175,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_240.JPEG,True,0.30460411310195923
+Chimpanzee,0.175,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,True,0.31242871284484863
+Orangutan,0.175,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.306438148021698
+Baboon,0.175,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,False,0.28787118196487427
+Bullfrog,0.175,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,True,0.3006565272808075
+Tailed Frog,0.175,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,False,0.30522769689559937
+European Fire Salamander,0.175,European Fire Salamander,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/european_fire_salamander_n01629819_n01629819_184.JPEG,True,0.3141931891441345
+Lemon,0.175,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.29339200258255005
+Orange,0.175,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,True,0.3128252625465393
+Banana,0.175,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.3210321366786957
+Pomegranate,0.175,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_240.JPEG,True,0.3060257136821747
+Acorn,0.175,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_111.JPEG,False,0.2775859832763672
+Frying Pan,0.175,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.30084437131881714
+Teapot,0.175,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.3137027621269226
+German Shepherd,0.2,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_125.JPEG,True,0.265695184469223
+Golden Retriever,0.2,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_111.JPEG,True,0.2666645050048828
+Labrador Retriever,0.2,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_111.JPEG,False,0.26027530431747437
+Chihuahua,0.2,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.280372679233551
+Standard Poodle,0.2,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,True,0.30555516481399536
+Yorkshire Terrier,0.2,Yorkshire Terrier,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/yorkshire_terrier_n02094433_n02094433_240.JPEG,True,0.2785615622997284
+Tabby Cat,0.2,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.2914508879184723
+Egyptian Cat,0.2,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_111.JPEG,False,0.2759557068347931
+Persian Cat,0.2,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_111.JPEG,True,0.2672388255596161
+Cougar,0.2,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.29224640130996704
+Lion,0.2,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.2855950593948364
+Monarch Butterfly,0.2,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_111.JPEG,True,0.3148844838142395
+Sulphur Butterfly,0.2,Sulphur Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/sulphur_butterfly_n02281406_n02281406_213.JPEG,True,0.33777955174446106
+Ladybug,0.2,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.3289547562599182
+Dragonfly,0.2,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_111.JPEG,True,0.29681944847106934
+Mantis,0.2,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_213.JPEG,True,0.2638687491416931
+Albatross,0.2,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,False,0.25919294357299805
+Goose,0.2,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.3017459809780121
+Black Stork,0.2,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.31625592708587646
+King Penguin,0.2,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_240.JPEG,True,0.28923720121383667
+Chimpanzee,0.2,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,True,0.3072381019592285
+Orangutan,0.2,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.2958923876285553
+Baboon,0.2,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,False,0.29319554567337036
+Bullfrog,0.2,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,True,0.2991054356098175
+Tailed Frog,0.2,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,False,0.30264556407928467
+European Fire Salamander,0.2,European Fire Salamander,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/european_fire_salamander_n01629819_n01629819_184.JPEG,True,0.29526329040527344
+Lemon,0.2,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.29548192024230957
+Orange,0.2,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,True,0.301177978515625
+Banana,0.2,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.32038938999176025
+Pomegranate,0.2,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_240.JPEG,True,0.3118912875652313
+Acorn,0.2,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.28426265716552734
+Frying Pan,0.2,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.2995520830154419
+Teapot,0.2,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.30782538652420044
+German Shepherd,0.225,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_125.JPEG,True,0.26716890931129456
+Golden Retriever,0.225,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_111.JPEG,True,0.26154959201812744
+Labrador Retriever,0.225,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_111.JPEG,False,0.26382336020469666
+Chihuahua,0.225,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.2790856957435608
+Standard Poodle,0.225,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_111.JPEG,True,0.29801592230796814
+Yorkshire Terrier,0.225,Yorkshire Terrier,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/yorkshire_terrier_n02094433_n02094433_240.JPEG,True,0.2741412818431854
+Tabby Cat,0.225,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.2881341576576233
+Egyptian Cat,0.225,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_111.JPEG,False,0.27141523361206055
+Persian Cat,0.225,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_111.JPEG,True,0.2615358829498291
+Cougar,0.225,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.2807071805000305
+Lion,0.225,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.284149169921875
+Monarch Butterfly,0.225,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_111.JPEG,True,0.3152533173561096
+Sulphur Butterfly,0.225,Sulphur Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/sulphur_butterfly_n02281406_n02281406_213.JPEG,True,0.3285943269729614
+Ladybug,0.225,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.3167756199836731
+Dragonfly,0.225,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,True,0.28437018394470215
+Mantis,0.225,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_240.JPEG,True,0.26349395513534546
+Albatross,0.225,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_213.JPEG,True,0.2536022365093231
+Goose,0.225,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.2990799844264984
+Black Stork,0.225,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.30741560459136963
+King Penguin,0.225,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_240.JPEG,True,0.2897760272026062
+Chimpanzee,0.225,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,True,0.30590537190437317
+Orangutan,0.225,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.2873159646987915
+Baboon,0.225,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,False,0.29214370250701904
+Bullfrog,0.225,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,True,0.2914193272590637
+Tailed Frog,0.225,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,False,0.29376575350761414
+European Fire Salamander,0.225,European Fire Salamander,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/european_fire_salamander_n01629819_n01629819_184.JPEG,True,0.2822225093841553
+Lemon,0.225,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.2928919494152069
+Orange,0.225,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,True,0.2935052216053009
+Banana,0.225,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.31833288073539734
+Pomegranate,0.225,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_240.JPEG,True,0.3155113160610199
+Acorn,0.225,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.2985144555568695
+Frying Pan,0.225,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.29675203561782837
+Teapot,0.225,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.30355459451675415
+German Shepherd,0.25,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_125.JPEG,True,0.25583821535110474
+Golden Retriever,0.25,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_184.JPEG,False,0.254535049200058
+Labrador Retriever,0.25,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_111.JPEG,False,0.25688284635543823
+Chihuahua,0.25,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.2889152765274048
+Standard Poodle,0.25,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_111.JPEG,True,0.2973529100418091
+Yorkshire Terrier,0.25,Yorkshire Terrier,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/yorkshire_terrier_n02094433_n02094433_240.JPEG,True,0.26877641677856445
+Tabby Cat,0.25,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.2797797620296478
+Egyptian Cat,0.25,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_240.JPEG,True,0.26849523186683655
+Persian Cat,0.25,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_111.JPEG,True,0.25752967596054077
+Cougar,0.25,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.26529166102409363
+Lion,0.25,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.275921493768692
+Monarch Butterfly,0.25,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_111.JPEG,True,0.29850703477859497
+Sulphur Butterfly,0.25,Sulphur Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/sulphur_butterfly_n02281406_n02281406_213.JPEG,True,0.3144945204257965
+Ladybug,0.25,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.31135430932044983
+Dragonfly,0.25,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,True,0.2685169279575348
+Mantis,0.25,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,True,0.24318939447402954
+Albatross,0.25,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,False,0.24854382872581482
+Goose,0.25,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.2927092909812927
+Black Stork,0.25,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.2934504449367523
+King Penguin,0.25,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_240.JPEG,True,0.2761857807636261
+Chimpanzee,0.25,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,True,0.2952839732170105
+Orangutan,0.25,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.2751387655735016
+Baboon,0.25,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,False,0.2820237874984741
+Bullfrog,0.25,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,True,0.2846221327781677
+Tailed Frog,0.25,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,False,0.2851003110408783
+European Fire Salamander,0.25,European Fire Salamander,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/european_fire_salamander_n01629819_n01629819_184.JPEG,True,0.25138601660728455
+Lemon,0.25,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.27880269289016724
+Orange,0.25,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,True,0.28366878628730774
+Banana,0.25,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.3129745125770569
+Pomegranate,0.25,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_240.JPEG,True,0.2976572513580322
+Acorn,0.25,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.29303067922592163
+Frying Pan,0.25,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.28187841176986694
+Teapot,0.25,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.3007805645465851
+German Shepherd,0.275,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_240.JPEG,False,0.23497015237808228
+Golden Retriever,0.275,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_111.JPEG,True,0.24817845225334167
+Labrador Retriever,0.275,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_111.JPEG,False,0.24444365501403809
+Chihuahua,0.275,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.26861390471458435
+Standard Poodle,0.275,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_111.JPEG,True,0.2902854084968567
+Yorkshire Terrier,0.275,Yorkshire Terrier,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/yorkshire_terrier_n02094433_n02094433_184.JPEG,True,0.2607491910457611
+Tabby Cat,0.275,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.2662973403930664
+Egyptian Cat,0.275,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_213.JPEG,True,0.2630669176578522
+Persian Cat,0.275,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_213.JPEG,False,0.24929112195968628
+Cougar,0.275,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.25123122334480286
+Lion,0.275,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.26630592346191406
+Monarch Butterfly,0.275,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_111.JPEG,True,0.2900395095348358
+Sulphur Butterfly,0.275,Sulphur Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/sulphur_butterfly_n02281406_n02281406_213.JPEG,True,0.2965642809867859
+Ladybug,0.275,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.29029759764671326
+Dragonfly,0.275,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,True,0.24432078003883362
+Mantis,0.275,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_111.JPEG,False,0.2277151197195053
+Albatross,0.275,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,False,0.24174568057060242
+Goose,0.275,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.28198057413101196
+Black Stork,0.275,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.2850103974342346
+King Penguin,0.275,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_240.JPEG,True,0.24758246541023254
+Chimpanzee,0.275,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,True,0.28069835901260376
+Orangutan,0.275,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.26651647686958313
+Baboon,0.275,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,False,0.26812565326690674
+Bullfrog,0.275,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,True,0.27221909165382385
+Tailed Frog,0.275,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,False,0.27221110463142395
+European Fire Salamander,0.275,European Fire Salamander,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/european_fire_salamander_n01629819_n01629819_111.JPEG,True,0.23043310642242432
+Lemon,0.275,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.2641528248786926
+Orange,0.275,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,True,0.27488991618156433
+Banana,0.275,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.29660457372665405
+Pomegranate,0.275,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_240.JPEG,True,0.2860848307609558
+Acorn,0.275,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.2752571702003479
+Frying Pan,0.275,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_184.JPEG,True,0.25613343715667725
+Teapot,0.275,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.2900480628013611
+German Shepherd,0.3,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_240.JPEG,False,0.2249554991722107
+Golden Retriever,0.3,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_184.JPEG,True,0.2407958060503006
+Labrador Retriever,0.3,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_111.JPEG,False,0.2435472309589386
+Chihuahua,0.3,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.264364093542099
+Standard Poodle,0.3,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_111.JPEG,True,0.26838791370391846
+Yorkshire Terrier,0.3,Yorkshire Terrier,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/yorkshire_terrier_n02094433_n02094433_184.JPEG,True,0.25890958309173584
+Tabby Cat,0.3,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.25889408588409424
+Egyptian Cat,0.3,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_213.JPEG,True,0.2622850835323334
+Persian Cat,0.3,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,True,0.25785142183303833
+Cougar,0.3,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.23433129489421844
+Lion,0.3,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.25911420583724976
+Monarch Butterfly,0.3,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_111.JPEG,True,0.2755584120750427
+Sulphur Butterfly,0.3,Sulphur Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/sulphur_butterfly_n02281406_n02281406_213.JPEG,True,0.27127110958099365
+Ladybug,0.3,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.26898056268692017
+Dragonfly,0.3,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_125.JPEG,True,0.23030270636081696
+Mantis,0.3,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,True,0.21859970688819885
+Albatross,0.3,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,False,0.23620551824569702
+Goose,0.3,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.2712556719779968
+Black Stork,0.3,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.2692418396472931
+King Penguin,0.3,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_184.JPEG,True,0.24296754598617554
+Chimpanzee,0.3,Chimpanzee,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chimpanzee_n02481823_n02481823_125.JPEG,True,0.2607214152812958
+Orangutan,0.3,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.25154241919517517
+Baboon,0.3,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,False,0.2535538971424103
+Bullfrog,0.3,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_184.JPEG,True,0.2493584156036377
+Tailed Frog,0.3,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_125.JPEG,False,0.24840059876441956
+European Fire Salamander,0.3,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_184.JPEG,False,0.23341470956802368
+Lemon,0.3,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.24630770087242126
+Orange,0.3,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.24313174188137054
+Banana,0.3,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.2805384695529938
+Pomegranate,0.3,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_240.JPEG,True,0.2705838978290558
+Acorn,0.3,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.25599515438079834
+Frying Pan,0.3,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_240.JPEG,True,0.25208786129951477
+Teapot,0.3,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.2665191888809204
+German Shepherd,0.325,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_184.JPEG,False,0.21538452804088593
+Golden Retriever,0.325,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_184.JPEG,True,0.24130064249038696
+Labrador Retriever,0.325,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_111.JPEG,False,0.23239821195602417
+Chihuahua,0.325,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.2539665699005127
+Standard Poodle,0.325,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_125.JPEG,False,0.2560047209262848
+Yorkshire Terrier,0.325,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,False,0.23990148305892944
+Tabby Cat,0.325,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.2449631690979004
+Egyptian Cat,0.325,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_213.JPEG,True,0.25028061866760254
+Persian Cat,0.325,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_111.JPEG,True,0.2476113736629486
+Cougar,0.325,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.22179636359214783
+Lion,0.325,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.24390745162963867
+Monarch Butterfly,0.325,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_111.JPEG,True,0.23740245401859283
+Sulphur Butterfly,0.325,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_240.JPEG,False,0.24107500910758972
+Ladybug,0.325,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.2198031097650528
+Dragonfly,0.325,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_125.JPEG,True,0.20954075455665588
+Mantis,0.325,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_184.JPEG,False,0.19966161251068115
+Albatross,0.325,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,True,0.2163485735654831
+Goose,0.325,Goose,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/goose_n01855672_n01855672_184.JPEG,True,0.2177409827709198
+Black Stork,0.325,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.2559206485748291
+King Penguin,0.325,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_184.JPEG,True,0.22084394097328186
+Chimpanzee,0.325,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,False,0.23305124044418335
+Orangutan,0.325,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.23142313957214355
+Baboon,0.325,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,False,0.22343569993972778
+Bullfrog,0.325,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_125.JPEG,True,0.22582688927650452
+Tailed Frog,0.325,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_125.JPEG,False,0.23434722423553467
+European Fire Salamander,0.325,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_184.JPEG,False,0.2178969532251358
+Lemon,0.325,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_240.JPEG,True,0.22080180048942566
+Orange,0.325,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_111.JPEG,True,0.21568667888641357
+Banana,0.325,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.2530616819858551
+Pomegranate,0.325,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_213.JPEG,False,0.24662135541439056
+Acorn,0.325,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.2305549830198288
+Frying Pan,0.325,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_240.JPEG,True,0.2287423312664032
+Teapot,0.325,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.23711258172988892
+German Shepherd,0.35,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_184.JPEG,False,0.20284147560596466
+Golden Retriever,0.35,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,True,0.2315959632396698
+Labrador Retriever,0.35,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.2220110446214676
+Chihuahua,0.35,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.2390533834695816
+Standard Poodle,0.35,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.24592003226280212
+Yorkshire Terrier,0.35,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,False,0.2360597848892212
+Tabby Cat,0.35,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_213.JPEG,False,0.2254825234413147
+Egyptian Cat,0.35,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_213.JPEG,True,0.23579996824264526
+Persian Cat,0.35,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,False,0.23548445105552673
+Cougar,0.35,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,True,0.19969433546066284
+Lion,0.35,Lion,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lion_n02129165_n02129165_240.JPEG,True,0.21880969405174255
+Monarch Butterfly,0.35,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_240.JPEG,True,0.20775769650936127
+Sulphur Butterfly,0.35,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_240.JPEG,False,0.21800841391086578
+Ladybug,0.35,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_240.JPEG,True,0.19703851640224457
+Dragonfly,0.35,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_240.JPEG,False,0.19739651679992676
+Mantis,0.35,Tailed Frog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tailed_frog_n01644900_n01644900_111.JPEG,False,0.1818498969078064
+Albatross,0.35,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,True,0.19774876534938812
+Goose,0.35,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,False,0.1940593421459198
+Black Stork,0.35,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_111.JPEG,True,0.24747130274772644
+King Penguin,0.35,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_184.JPEG,True,0.19580258429050446
+Chimpanzee,0.35,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,False,0.22689010202884674
+Orangutan,0.35,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,False,0.2175927460193634
+Baboon,0.35,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,False,0.20696908235549927
+Bullfrog,0.35,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_125.JPEG,True,0.20972169935703278
+Tailed Frog,0.35,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_125.JPEG,False,0.20278120040893555
+European Fire Salamander,0.35,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_184.JPEG,False,0.20161116123199463
+Lemon,0.35,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_240.JPEG,True,0.19926097989082336
+Orange,0.35,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.19592605531215668
+Banana,0.35,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.23397618532180786
+Pomegranate,0.35,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_213.JPEG,False,0.22090966999530792
+Acorn,0.35,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.21071913838386536
+Frying Pan,0.35,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_240.JPEG,True,0.21270455420017242
+Teapot,0.35,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.20026572048664093
+German Shepherd,0.375,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,False,0.19831566512584686
+Golden Retriever,0.375,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,True,0.24294504523277283
+Labrador Retriever,0.375,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.22637905180454254
+Chihuahua,0.375,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.23146869242191315
+Standard Poodle,0.375,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.24784240126609802
+Yorkshire Terrier,0.375,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,False,0.22691500186920166
+Tabby Cat,0.375,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_125.JPEG,True,0.2162781059741974
+Egyptian Cat,0.375,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_111.JPEG,False,0.22155319154262543
+Persian Cat,0.375,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,True,0.21998274326324463
+Cougar,0.375,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,False,0.17598585784435272
+Lion,0.375,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,False,0.19686931371688843
+Monarch Butterfly,0.375,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_111.JPEG,True,0.18556055426597595
+Sulphur Butterfly,0.375,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_240.JPEG,False,0.18868441879749298
+Ladybug,0.375,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_111.JPEG,True,0.1894659847021103
+Dragonfly,0.375,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_240.JPEG,False,0.1749594509601593
+Mantis,0.375,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_240.JPEG,False,0.16802756488323212
+Albatross,0.375,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,True,0.18088437616825104
+Goose,0.375,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,False,0.18055255711078644
+Black Stork,0.375,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,False,0.20944428443908691
+King Penguin,0.375,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,False,0.16286879777908325
+Chimpanzee,0.375,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,False,0.1956140100955963
+Orangutan,0.375,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,True,0.18053576350212097
+Baboon,0.375,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_213.JPEG,False,0.18468455970287323
+Bullfrog,0.375,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_125.JPEG,True,0.20091938972473145
+Tailed Frog,0.375,Bullfrog,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/bullfrog_n01641577_n01641577_125.JPEG,False,0.18468201160430908
+European Fire Salamander,0.375,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_240.JPEG,False,0.19338232278823853
+Lemon,0.375,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_213.JPEG,False,0.18951724469661713
+Orange,0.375,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.1815180629491806
+Banana,0.375,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.2086431384086609
+Pomegranate,0.375,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_213.JPEG,False,0.1914849430322647
+Acorn,0.375,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.20321479439735413
+Frying Pan,0.375,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_111.JPEG,True,0.1976269632577896
+Teapot,0.375,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.17266356945037842
+German Shepherd,0.4,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,False,0.19367042183876038
+Golden Retriever,0.4,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,True,0.22786793112754822
+Labrador Retriever,0.4,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.21262691915035248
+Chihuahua,0.4,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,True,0.20936283469200134
+Standard Poodle,0.4,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.23952288925647736
+Yorkshire Terrier,0.4,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,False,0.2146722674369812
+Tabby Cat,0.4,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.19720494747161865
+Egyptian Cat,0.4,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.2015872448682785
+Persian Cat,0.4,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,True,0.20361065864562988
+Cougar,0.4,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,False,0.1647091805934906
+Lion,0.4,Cougar,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/cougar_n02125311_n02125311_184.JPEG,False,0.1897030770778656
+Monarch Butterfly,0.4,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_240.JPEG,False,0.17139960825443268
+Sulphur Butterfly,0.4,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_240.JPEG,False,0.1748751848936081
+Ladybug,0.4,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_111.JPEG,True,0.16670535504817963
+Dragonfly,0.4,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,True,0.1571710854768753
+Mantis,0.4,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_240.JPEG,False,0.1550142467021942
+Albatross,0.4,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,True,0.15726961195468903
+Goose,0.4,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,False,0.16129657626152039
+Black Stork,0.4,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_111.JPEG,False,0.18286676704883575
+King Penguin,0.4,King Penguin,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/king_penguin_n02056570_n02056570_240.JPEG,True,0.16087791323661804
+Chimpanzee,0.4,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,False,0.17861206829547882
+Orangutan,0.4,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_240.JPEG,False,0.1551983654499054
+Baboon,0.4,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,False,0.16882088780403137
+Bullfrog,0.4,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_240.JPEG,False,0.17960938811302185
+Tailed Frog,0.4,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_240.JPEG,False,0.16639390587806702
+European Fire Salamander,0.4,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_213.JPEG,False,0.16977645456790924
+Lemon,0.4,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_213.JPEG,False,0.18665550649166107
+Orange,0.4,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.1553896963596344
+Banana,0.4,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_125.JPEG,True,0.15609440207481384
+Pomegranate,0.4,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_213.JPEG,False,0.18000103533267975
+Acorn,0.4,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.17543010413646698
+Frying Pan,0.4,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_111.JPEG,True,0.17746950685977936
+Teapot,0.4,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_110.JPEG,True,0.144217386841774
+German Shepherd,0.425,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.18183325231075287
+Golden Retriever,0.425,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.1985296905040741
+Labrador Retriever,0.425,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,True,0.19830350577831268
+Chihuahua,0.425,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.16459515690803528
+Standard Poodle,0.425,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.21343037486076355
+Yorkshire Terrier,0.425,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.1917533427476883
+Tabby Cat,0.425,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.1868227869272232
+Egyptian Cat,0.425,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.18536017835140228
+Persian Cat,0.425,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,True,0.18943162262439728
+Cougar,0.425,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.14745862782001495
+Lion,0.425,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_184.JPEG,False,0.17232203483581543
+Monarch Butterfly,0.425,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_213.JPEG,False,0.16078610718250275
+Sulphur Butterfly,0.425,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_213.JPEG,False,0.15608473122119904
+Ladybug,0.425,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,True,0.16189798712730408
+Dragonfly,0.425,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_213.JPEG,False,0.14475451409816742
+Mantis,0.425,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_240.JPEG,False,0.1427280753850937
+Albatross,0.425,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.1361461728811264
+Goose,0.425,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.15344052016735077
+Black Stork,0.425,Golden Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/golden_retriever_n02099601_n02099601_213.JPEG,False,0.1491178274154663
+King Penguin,0.425,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.13629065454006195
+Chimpanzee,0.425,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.15194056928157806
+Orangutan,0.425,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.14717839658260345
+Baboon,0.425,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.14171817898750305
+Bullfrog,0.425,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_240.JPEG,False,0.1637107878923416
+Tailed Frog,0.425,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_240.JPEG,False,0.15184329450130463
+European Fire Salamander,0.425,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_240.JPEG,False,0.16799628734588623
+Lemon,0.425,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_213.JPEG,False,0.15685294568538666
+Orange,0.425,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_111.JPEG,True,0.14396680891513824
+Banana,0.425,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_213.JPEG,False,0.13677290081977844
+Pomegranate,0.425,Pomegranate,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/pomegranate_n07768694_n07768694_184.JPEG,True,0.15269705653190613
+Acorn,0.425,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.15996390581130981
+Frying Pan,0.425,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_111.JPEG,True,0.17533917725086212
+Teapot,0.425,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.13442793488502502
+German Shepherd,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.12971211969852448
+Golden Retriever,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.1350943148136139
+Labrador Retriever,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,True,0.1358519345521927
+Chihuahua,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.12489370256662369
+Standard Poodle,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.1518544703722
+Yorkshire Terrier,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.1439688801765442
+Tabby Cat,0.45,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.13980898261070251
+Egyptian Cat,0.45,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.14162951707839966
+Persian Cat,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.14375385642051697
+Cougar,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.11434873938560486
+Lion,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.14145076274871826
+Monarch Butterfly,0.45,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.1332411915063858
+Sulphur Butterfly,0.45,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.13674920797348022
+Ladybug,0.45,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,True,0.14531436562538147
+Dragonfly,0.45,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.12527698278427124
+Mantis,0.45,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_213.JPEG,False,0.11627935618162155
+Albatross,0.45,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_125.JPEG,False,0.11074818670749664
+Goose,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.11804181337356567
+Black Stork,0.45,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_240.JPEG,False,0.12879067659378052
+King Penguin,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.11592118442058563
+Chimpanzee,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.11596235632896423
+Orangutan,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.11579343676567078
+Baboon,0.45,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.11137863248586655
+Bullfrog,0.45,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_213.JPEG,False,0.13636906445026398
+Tailed Frog,0.45,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_184.JPEG,False,0.12111181020736694
+European Fire Salamander,0.45,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_213.JPEG,False,0.14771263301372528
+Lemon,0.45,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_111.JPEG,False,0.12298541516065598
+Orange,0.45,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.12263369560241699
+Banana,0.45,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.09640155732631683
+Pomegranate,0.45,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.1230844110250473
+Acorn,0.45,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.11854738742113113
+Frying Pan,0.45,Frying Pan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/frying_pan_n03400231_n03400231_111.JPEG,True,0.14555644989013672
+Teapot,0.45,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.11516363173723221
+German Shepherd,0.475,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_240.JPEG,False,0.11172180622816086
+Golden Retriever,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.1118273064494133
+Labrador Retriever,0.475,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.10607684403657913
+Chihuahua,0.475,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_240.JPEG,False,0.11101547628641129
+Standard Poodle,0.475,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.11738281697034836
+Yorkshire Terrier,0.475,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.11916600912809372
+Tabby Cat,0.475,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_111.JPEG,False,0.12354208528995514
+Egyptian Cat,0.475,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_111.JPEG,False,0.1191452369093895
+Persian Cat,0.475,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_111.JPEG,False,0.1283416897058487
+Cougar,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.10734347254037857
+Lion,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.1040380671620369
+Monarch Butterfly,0.475,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.12363770604133606
+Sulphur Butterfly,0.475,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.12363207340240479
+Ladybug,0.475,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.12100223451852798
+Dragonfly,0.475,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.10370675474405289
+Mantis,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.10921487212181091
+Albatross,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.1074538379907608
+Goose,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_240.JPEG,False,0.10954048484563828
+Black Stork,0.475,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_240.JPEG,False,0.11953872442245483
+King Penguin,0.475,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.10410264134407043
+Chimpanzee,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.10946430265903473
+Orangutan,0.475,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.10326262563467026
+Baboon,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.10106662660837173
+Bullfrog,0.475,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.1174544245004654
+Tailed Frog,0.475,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.10717605799436569
+European Fire Salamander,0.475,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.11568257957696915
+Lemon,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.10431832820177078
+Orange,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.11685533821582794
+Banana,0.475,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_213.JPEG,False,0.0860186293721199
+Pomegranate,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.11244591325521469
+Acorn,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.10726403445005417
+Frying Pan,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.11382167041301727
+Teapot,0.475,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.1050703227519989
+German Shepherd,0.5,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_111.JPEG,True,0.09126491099596024
+Golden Retriever,0.5,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.09472861140966415
+Labrador Retriever,0.5,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_184.JPEG,False,0.08944816887378693
+Chihuahua,0.5,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.09563460946083069
+Standard Poodle,0.5,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.09598696976900101
+Yorkshire Terrier,0.5,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.09448424726724625
+Tabby Cat,0.5,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_111.JPEG,False,0.10405304282903671
+Egyptian Cat,0.5,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.0996653214097023
+Persian Cat,0.5,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_111.JPEG,False,0.10373762995004654
+Cougar,0.5,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.0850086510181427
+Lion,0.5,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,False,0.08526358753442764
+Monarch Butterfly,0.5,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_125.JPEG,True,0.10273173451423645
+Sulphur Butterfly,0.5,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.09298794716596603
+Ladybug,0.5,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.09963873028755188
+Dragonfly,0.5,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.09014411270618439
+Mantis,0.5,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_111.JPEG,False,0.08639003336429596
+Albatross,0.5,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.08950747549533844
+Goose,0.5,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_125.JPEG,False,0.09361928701400757
+Black Stork,0.5,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_111.JPEG,False,0.09483619779348373
+King Penguin,0.5,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_111.JPEG,False,0.09566681832075119
+Chimpanzee,0.5,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_125.JPEG,False,0.09074478596448898
+Orangutan,0.5,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_111.JPEG,False,0.08769118785858154
+Baboon,0.5,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_111.JPEG,False,0.08689672499895096
+Bullfrog,0.5,Labrador Retriever,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/labrador_retriever_n02099712_n02099712_125.JPEG,False,0.10371746122837067
+Tailed Frog,0.5,Black Stork,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/black_stork_n02002724_n02002724_213.JPEG,False,0.09040586650371552
+European Fire Salamander,0.5,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_184.JPEG,False,0.09363185614347458
+Lemon,0.5,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.0873991847038269
+Orange,0.5,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.09005778282880783
+Banana,0.5,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_111.JPEG,False,0.08097972720861435
+Pomegranate,0.5,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_111.JPEG,False,0.09824896603822708
+Acorn,0.5,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_125.JPEG,False,0.08436769247055054
+Frying Pan,0.5,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_125.JPEG,False,0.09661214798688889
+Teapot,0.5,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_125.JPEG,False,0.08954300731420517
+German Shepherd,0.525,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_111.JPEG,True,0.08342099189758301
+Golden Retriever,0.525,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.0879545733332634
+Labrador Retriever,0.525,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.08325544744729996
+Chihuahua,0.525,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.08467116951942444
+Standard Poodle,0.525,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_213.JPEG,False,0.08796197175979614
+Yorkshire Terrier,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.08800268173217773
+Tabby Cat,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.08829230815172195
+Egyptian Cat,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.09210240095853806
+Persian Cat,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.09009444713592529
+Cougar,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.08089381456375122
+Lion,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.08012349903583527
+Monarch Butterfly,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.09766627848148346
+Sulphur Butterfly,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.09171212464570999
+Ladybug,0.525,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_111.JPEG,True,0.09039800614118576
+Dragonfly,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.08670765161514282
+Mantis,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.08104795962572098
+Albatross,0.525,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_125.JPEG,True,0.08092799037694931
+Goose,0.525,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_111.JPEG,False,0.08968418836593628
+Black Stork,0.525,German Shepherd,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/german_shepherd_n02106662_n02106662_111.JPEG,False,0.0825440064072609
+King Penguin,0.525,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_111.JPEG,False,0.08871080726385117
+Chimpanzee,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.08318161964416504
+Orangutan,0.525,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.08080442994832993
+Baboon,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.08232123404741287
+Bullfrog,0.525,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_111.JPEG,False,0.0882243663072586
+Tailed Frog,0.525,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_111.JPEG,False,0.08672665059566498
+European Fire Salamander,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.08730431646108627
+Lemon,0.525,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_213.JPEG,False,0.08267534524202347
+Orange,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.08448633551597595
+Banana,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.08280812948942184
+Pomegranate,0.525,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_213.JPEG,False,0.08500254154205322
+Acorn,0.525,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_213.JPEG,False,0.08029987663030624
+Frying Pan,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.08482689410448074
+Teapot,0.525,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.08159442245960236
+German Shepherd,0.55,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.0680757462978363
+Golden Retriever,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.07117500901222229
+Labrador Retriever,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.07251989841461182
+Chihuahua,0.55,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_240.JPEG,False,0.07083642482757568
+Standard Poodle,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.07053453475236893
+Yorkshire Terrier,0.55,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.07442144304513931
+Tabby Cat,0.55,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_240.JPEG,False,0.0712045207619667
+Egyptian Cat,0.55,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,False,0.07246172428131104
+Persian Cat,0.55,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.06997602432966232
+Cougar,0.55,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.06741344928741455
+Lion,0.55,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.06718127429485321
+Monarch Butterfly,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.07282715290784836
+Sulphur Butterfly,0.55,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.0701705738902092
+Ladybug,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.07073625922203064
+Dragonfly,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.06969553232192993
+Mantis,0.55,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_240.JPEG,False,0.06728766113519669
+Albatross,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.06903386861085892
+Goose,0.55,Egyptian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/egyptian_cat_n02124075_n02124075_240.JPEG,False,0.0696406438946724
+Black Stork,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.07002715021371841
+King Penguin,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.06930159777402878
+Chimpanzee,0.55,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,False,0.06910400092601776
+Orangutan,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.06775947660207748
+Baboon,0.55,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,False,0.06819268316030502
+Bullfrog,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.07272898405790329
+Tailed Frog,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.0721333920955658
+European Fire Salamander,0.55,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.07156429439783096
+Lemon,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.06875190883874893
+Orange,0.55,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.07013347744941711
+Banana,0.55,Chihuahua,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/chihuahua_n02085620_n02085620_111.JPEG,False,0.06726308912038803
+Pomegranate,0.55,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.06915564835071564
+Acorn,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.06730730831623077
+Frying Pan,0.55,Ladybug,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/ladybug_n02165456_n02165456_184.JPEG,False,0.07407602667808533
+Teapot,0.55,Mantis,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/mantis_n02236044_n02236044_125.JPEG,False,0.07097677141427994
+German Shepherd,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.07096312195062637
+Golden Retriever,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.07007613033056259
+Labrador Retriever,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.07214707136154175
+Chihuahua,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.0701584443449974
+Standard Poodle,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.06840141117572784
+Yorkshire Terrier,0.575,Monarch Butterfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/monarch_butterfly_n02279972_n02279972_240.JPEG,False,0.07422356307506561
+Tabby Cat,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.07288247346878052
+Egyptian Cat,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.07202214747667313
+Persian Cat,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,True,0.07098590582609177
+Cougar,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.06700798124074936
+Lion,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.06679338961839676
+Monarch Butterfly,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.07342621684074402
+Sulphur Butterfly,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.07088401168584824
+Ladybug,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.06661351770162582
+Dragonfly,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.07041450589895248
+Mantis,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.06829912215471268
+Albatross,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.06812723726034164
+Goose,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.06893924623727798
+Black Stork,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.06891263276338577
+King Penguin,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.0730651393532753
+Chimpanzee,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.07194051891565323
+Orangutan,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.07023520767688751
+Baboon,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.06841173768043518
+Bullfrog,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.06940077990293503
+Tailed Frog,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.07022349536418915
+European Fire Salamander,0.575,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_184.JPEG,False,0.07413088530302048
+Lemon,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.06657955050468445
+Orange,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.0701819658279419
+Banana,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.06877326965332031
+Pomegranate,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.0667903795838356
+Acorn,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.06579887866973877
+Frying Pan,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.07375366985797882
+Teapot,0.575,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.07127755880355835
+German Shepherd,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.05298914760351181
+Golden Retriever,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.050030726939439774
+Labrador Retriever,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.05183343589305878
+Chihuahua,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.052389129996299744
+Standard Poodle,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.05113206058740616
+Yorkshire Terrier,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.05429009348154068
+Tabby Cat,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.054169174283742905
+Egyptian Cat,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.0543966144323349
+Persian Cat,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.05374934896826744
+Cougar,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.049362897872924805
+Lion,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.04982643574476242
+Monarch Butterfly,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.05405367538332939
+Sulphur Butterfly,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.051522817462682724
+Ladybug,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.04905954375863075
+Dragonfly,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.05098627507686615
+Mantis,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.050972312688827515
+Albatross,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.05320345610380173
+Goose,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.05130937322974205
+Black Stork,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.05082973465323448
+King Penguin,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.05419037118554115
+Chimpanzee,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.05460996925830841
+Orangutan,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.05143408849835396
+Baboon,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.050772540271282196
+Bullfrog,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.05214598402380943
+Tailed Frog,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.05243610218167305
+European Fire Salamander,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.054085470736026764
+Lemon,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.049548350274562836
+Orange,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.05148888751864433
+Banana,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.050766974687576294
+Pomegranate,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.04954592138528824
+Acorn,0.6,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_213.JPEG,False,0.04823673143982887
+Frying Pan,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.0542534776031971
+Teapot,0.6,Persian Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/persian_cat_n02123394_n02123394_240.JPEG,False,0.0494694858789444
+German Shepherd,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05471310019493103
+Golden Retriever,0.625,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_213.JPEG,False,0.05405963212251663
+Labrador Retriever,0.625,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_213.JPEG,False,0.056250907480716705
+Chihuahua,0.625,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_213.JPEG,False,0.053790125995874405
+Standard Poodle,0.625,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_213.JPEG,False,0.05452399328351021
+Yorkshire Terrier,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05367165058851242
+Tabby Cat,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.054965585470199585
+Egyptian Cat,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05528121441602707
+Persian Cat,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05403199791908264
+Cougar,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05270686745643616
+Lion,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.053423307836055756
+Monarch Butterfly,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.055432096123695374
+Sulphur Butterfly,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05488136038184166
+Ladybug,0.625,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_213.JPEG,False,0.05214345455169678
+Dragonfly,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.054688263684511185
+Mantis,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05370299145579338
+Albatross,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05349394679069519
+Goose,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05375267565250397
+Black Stork,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05451401323080063
+King Penguin,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.056014448404312134
+Chimpanzee,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05656991899013519
+Orangutan,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05603499710559845
+Baboon,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.053973253816366196
+Bullfrog,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05352853611111641
+Tailed Frog,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.054565850645303726
+European Fire Salamander,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05504652112722397
+Lemon,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.05422642081975937
+Orange,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.054374996572732925
+Banana,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05402454733848572
+Pomegranate,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.053802087903022766
+Acorn,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.05336039140820503
+Frying Pan,0.625,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.058073289692401886
+Teapot,0.625,Banana,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/banana_n07753592_n07753592_213.JPEG,False,0.0518609918653965
+German Shepherd,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.04981592670083046
+Golden Retriever,0.65,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_125.JPEG,False,0.05365633964538574
+Labrador Retriever,0.65,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_125.JPEG,False,0.05636785179376602
+Chihuahua,0.65,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_125.JPEG,False,0.05119509622454643
+Standard Poodle,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.05108311027288437
+Yorkshire Terrier,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.05041392520070076
+Tabby Cat,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.05079367756843567
+Egyptian Cat,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.050564102828502655
+Persian Cat,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.049619488418102264
+Cougar,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.049292176961898804
+Lion,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.0496777705848217
+Monarch Butterfly,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.05173181742429733
+Sulphur Butterfly,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.051729582250118256
+Ladybug,0.65,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_213.JPEG,False,0.052198637276887894
+Dragonfly,0.65,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_213.JPEG,False,0.05076339840888977
+Mantis,0.65,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,False,0.04961169883608818
+Albatross,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.04968501254916191
+Goose,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.04965212941169739
+Black Stork,0.65,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_125.JPEG,False,0.05131881684064865
+King Penguin,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.05125342682003975
+Chimpanzee,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.05086161196231842
+Orangutan,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.05156705528497696
+Baboon,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.04994887858629227
+Bullfrog,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.04892084002494812
+Tailed Frog,0.65,Dragonfly,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/dragonfly_n02268443_n02268443_125.JPEG,False,0.04961593821644783
+European Fire Salamander,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.05011516064405441
+Lemon,0.65,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_213.JPEG,False,0.04987134411931038
+Orange,0.65,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,True,0.049996230751276016
+Banana,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.04897566884756088
+Pomegranate,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.05178705230355263
+Acorn,0.65,Orange,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orange_n07747607_n07747607_240.JPEG,False,0.050370410084724426
+Frying Pan,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.05299481377005577
+Teapot,0.65,Acorn,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/acorn_n12267677_n12267677_111.JPEG,False,0.05100705847144127
+German Shepherd,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04382386431097984
+Golden Retriever,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04688828065991402
+Labrador Retriever,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04912899434566498
+Chihuahua,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04475116357207298
+Standard Poodle,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,True,0.043570682406425476
+Yorkshire Terrier,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04323016479611397
+Tabby Cat,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.044608958065509796
+Egyptian Cat,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04408062621951103
+Persian Cat,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04279250651597977
+Cougar,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04307893291115761
+Lion,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04389282315969467
+Monarch Butterfly,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04391791671514511
+Sulphur Butterfly,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04342291131615639
+Ladybug,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04405944049358368
+Dragonfly,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.044213805347681046
+Mantis,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04373517259955406
+Albatross,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.044578004628419876
+Goose,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04334103316068649
+Black Stork,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04645761474967003
+King Penguin,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04399530962109566
+Chimpanzee,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04527430981397629
+Orangutan,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04539366066455841
+Baboon,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04463951289653778
+Bullfrog,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.042898330837488174
+Tailed Frog,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04357871413230896
+European Fire Salamander,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.0425412543118
+Lemon,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.044014543294906616
+Orange,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04359063878655434
+Banana,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04327194020152092
+Pomegranate,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.04464045912027359
+Acorn,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.043186359107494354
+Frying Pan,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.0456918366253376
+Teapot,0.675,Standard Poodle,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/standard_poodle_n02113799_n02113799_213.JPEG,False,0.045348018407821655
+German Shepherd,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.031215354800224304
+Golden Retriever,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03595574200153351
+Labrador Retriever,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.037370551377534866
+Chihuahua,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03216196224093437
+Standard Poodle,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03027259185910225
+Yorkshire Terrier,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.031079955399036407
+Tabby Cat,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,True,0.031072178855538368
+Egyptian Cat,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03219650685787201
+Persian Cat,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.030835554003715515
+Cougar,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03234085440635681
+Lion,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.031704630702733994
+Monarch Butterfly,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.033602070063352585
+Sulphur Butterfly,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03335827589035034
+Ladybug,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03492128476500511
+Dragonfly,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.032184600830078125
+Mantis,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03283465653657913
+Albatross,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.0327562615275383
+Goose,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.031852032989263535
+Black Stork,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.033382534980773926
+King Penguin,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03168202191591263
+Chimpanzee,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.032444581389427185
+Orangutan,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03019408881664276
+Baboon,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03272292762994766
+Bullfrog,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03174981847405434
+Tailed Frog,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.0319950208067894
+European Fire Salamander,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.030519450083374977
+Lemon,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.032147470861673355
+Orange,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03182712942361832
+Banana,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03134847432374954
+Pomegranate,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03458533436059952
+Acorn,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.031618885695934296
+Frying Pan,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.032773979008197784
+Teapot,0.7,Tabby Cat,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/tabby_cat_n02123045_n02123045_240.JPEG,False,0.03324974700808525
+German Shepherd,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.025725292041897774
+Golden Retriever,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.028132710605859756
+Labrador Retriever,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.02866606041789055
+Chihuahua,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.025029385462403297
+Standard Poodle,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.026332616806030273
+Yorkshire Terrier,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.02687203511595726
+Tabby Cat,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.0262285303324461
+Egyptian Cat,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.025327783077955246
+Persian Cat,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.024752557277679443
+Cougar,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.026166461408138275
+Lion,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.02464190684258938
+Monarch Butterfly,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.025651484727859497
+Sulphur Butterfly,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.025831811130046844
+Ladybug,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.02604236640036106
+Dragonfly,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.025116190314292908
+Mantis,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.024666886776685715
+Albatross,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.0256364643573761
+Goose,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.024606725201010704
+Black Stork,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.025879357010126114
+King Penguin,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.02514226734638214
+Chimpanzee,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.026952095329761505
+Orangutan,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.02716362290084362
+Baboon,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.026447325944900513
+Bullfrog,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.025038903579115868
+Tailed Frog,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.025587620213627815
+European Fire Salamander,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.025711923837661743
+Lemon,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,True,0.024239707738161087
+Orange,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.024558890610933304
+Banana,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.025064431130886078
+Pomegranate,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.026863478124141693
+Acorn,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.02313544601202011
+Frying Pan,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.026963669806718826
+Teapot,0.725,Lemon,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/lemon_n07749582_n07749582_213.JPEG,False,0.02557063102722168
+German Shepherd,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.026831146329641342
+Golden Retriever,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.029401421546936035
+Labrador Retriever,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.02980717644095421
+Chihuahua,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.02626708522439003
+Standard Poodle,0.75,Albatross,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/albatross_n02058221_n02058221_213.JPEG,False,0.028276322409510612
+Yorkshire Terrier,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.02752825617790222
+Tabby Cat,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.02946373261511326
+Egyptian Cat,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.027139786630868912
+Persian Cat,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.027227774262428284
+Cougar,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.029105089604854584
+Lion,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.027169685810804367
+Monarch Butterfly,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.027432747185230255
+Sulphur Butterfly,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.02719265967607498
+Ladybug,0.75,Orangutan,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/orangutan_n02480495_n02480495_125.JPEG,False,0.02617150917649269
+Dragonfly,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.026437202468514442
+Mantis,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.026986150071024895
+Albatross,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.02829110622406006
+Goose,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.026937976479530334
+Black Stork,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.02764114737510681
+King Penguin,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.026237361133098602
+Chimpanzee,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.02952796034514904
+Orangutan,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.030123449862003326
+Baboon,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.029130224138498306
+Bullfrog,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.027055375277996063
+Tailed Frog,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.027400866150856018
+European Fire Salamander,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.030235178768634796
+Lemon,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.02589968964457512
+Orange,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.026916448026895523
+Banana,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.02693089470267296
+Pomegranate,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.026381364092230797
+Acorn,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.025901859626173973
+Frying Pan,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,False,0.02894747257232666
+Teapot,0.75,Teapot,/home-mscluster/eazubuike/semantic-dementia-clip-main/run_v3_joint_query/data/images/teapot_n04398044_n04398044_240.JPEG,True,0.027563536539673805

@@ -47,7 +47,7 @@ def generate_hierarchy_dendrogram(
     output_dir: str | None = None,
 ) -> str:
     if pruning_levels_to_show is None:
-        pruning_levels_to_show = [0.0, 0.25, 0.50, 0.75]
+        pruning_levels_to_show = [0.0, 0.10, 0.20, 0.30, 0.375, 0.475]
     if output_dir is None:
         output_dir = os.path.join(PROJECT_ROOT, "data", "results")
     os.makedirs(output_dir, exist_ok=True)

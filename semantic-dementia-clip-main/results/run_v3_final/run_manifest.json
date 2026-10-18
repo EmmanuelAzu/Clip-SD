@@ -1,0 +1,129 @@
+{
+  "timestamp": "2026-09-16T11:37:21.029594",
+  "git_commit": "unknown (not a git repo, or git unavailable)",
+  "skip_indexing": true,
+  "curated_classes": [
+    "German Shepherd",
+    "Golden Retriever",
+    "Labrador Retriever",
+    "Chihuahua",
+    "Standard Poodle",
+    "Yorkshire Terrier",
+    "Tabby Cat",
+    "Egyptian Cat",
+    "Persian Cat",
+    "Cougar",
+    "Lion",
+    "Monarch Butterfly",
+    "Sulphur Butterfly",
+    "Ladybug",
+    "Dragonfly",
+    "Mantis",
+    "Albatross",
+    "Goose",
+    "Black Stork",
+    "King Penguin",
+    "Chimpanzee",
+    "Orangutan",
+    "Baboon",
+    "Bullfrog",
+    "Tailed Frog",
+    "European Fire Salamander",
+    "Lemon",
+    "Orange",
+    "Banana",
+    "Pomegranate",
+    "Acorn",
+    "Frying Pan",
+    "Teapot"
+  ],
+  "n_curated_classes": 33,
+  "coordinate_groups": {
+    "Domestic Dogs": [
+      "German Shepherd",
+      "Golden Retriever",
+      "Labrador Retriever",
+      "Chihuahua",
+      "Standard Poodle",
+      "Yorkshire Terrier"
+    ],
+    "Felines": [
+      "Tabby Cat",
+      "Egyptian Cat",
+      "Persian Cat",
+      "Cougar",
+      "Lion"
+    ],
+    "Insects": [
+      "Monarch Butterfly",
+      "Sulphur Butterfly",
+      "Ladybug",
+      "Dragonfly",
+      "Mantis"
+    ],
+    "Birds": [
+      "Albatross",
+      "Goose",
+      "Black Stork",
+      "King Penguin"
+    ],
+    "Primates": [
+      "Chimpanzee",
+      "Orangutan",
+      "Baboon"
+    ],
+    "Amphibians": [
+      "Bullfrog",
+      "Tailed Frog",
+      "European Fire Salamander"
+    ],
+    "Citrus": [
+      "Lemon",
+      "Orange"
+    ],
+    "Fruits": [
+      "Banana",
+      "Pomegranate",
+      "Acorn"
+    ],
+    "Kitchen Objects": [
+      "Frying Pan",
+      "Teapot"
+    ]
+  },
+  "images_per_class": 5,
+  "pruning_levels": [
+    0.0,
+    0.025,
+    0.05,
+    0.075,
+    0.1,
+    0.125,
+    0.15,
+    0.175,
+    0.2,
+    0.225,
+    0.25,
+    0.275,
+    0.3,
+    0.325,
+    0.35,
+    0.375,
+    0.4,
+    0.425,
+    0.45,
+    0.475,
+    0.5,
+    0.525,
+    0.55,
+    0.575,
+    0.6,
+    0.625,
+    0.65,
+    0.675,
+    0.7,
+    0.725,
+    0.75
+  ],
+  "python_version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]"
+}

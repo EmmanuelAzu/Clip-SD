@@ -129,7 +129,7 @@ def generate_curated_tsne_grid(
     )
 
     fig.suptitle(
-        f"Joint Embedding Space t-SNE Across All Pruning Levels ({scenario} scenario)\n"
+        f"Image Embedding Space t-SNE Across All Pruning Levels ({scenario} scenario)\n"
         "Color = coordinate group (hue family) + specific breed/species (shade)",
         fontsize=13, fontweight="bold", y=1.01,
     )

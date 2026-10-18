@@ -83,30 +83,28 @@ def compute_category_breakdown(sim_matrix: np.ndarray, targets: np.ndarray, meta
     return cat_accs
 
 
-def compute_hierarchical_breakdown(sim_matrix: np.ndarray, targets: np.ndarray, metadata: pd.DataFrame) -> dict[str, float | int]:
+def compute_hierarchical_breakdown(target_rows: list[dict], pred_rows: list[dict]) -> dict[str, float | int]:
     """Evaluates Top-1 prediction taxonomy errors across the 4-tier hierarchy.
 
-    Aligns error classification and distance costs with TestingHarness metrics.
+    Takes the true and predicted metadata row (as dicts with specific/
+    coordinate/superordinate/domain keys) for each query directly, rather
+    than a sim_matrix + argmax + metadata lookup internally -- this
+    decouples the classification logic from any specific retrieval
+    direction (image->text 33-way classification, as joint_evaluator.py's
+    run_eval uses, vs. text->image 165-candidate retrieval, as Bozeat
+    uses), so every caller can share this one implementation instead of
+    each re-deriving the same cascading logic independently. (Previously
+    joint_evaluator.run_eval had its own separate, hand-written copy of
+    this exact cascade -- consolidated here to remove that duplication.)
     """
-    meta_aligned = metadata.reset_index(drop=True)
-
     required_cols = ["specific", "coordinate", "superordinate", "domain"]
-    for col in required_cols:
-        if col not in meta_aligned.columns:
-            raise ValueError(f"[!] Missing required taxonomy column '{col}' in metadata.")
-    if meta_aligned[required_cols].isnull().any().any():
-        # A null taxonomy field (NaN != NaN in pandas/NumPy) would otherwise
-        # silently fall through every equality check below and get
-        # mis-classified as "Domain Collapse" regardless of the model's
-        # actual prediction.
-        null_cols = [c for c in required_cols if meta_aligned[c].isnull().any()]
-        raise ValueError(f"[!] Metadata contains null taxonomy values in column(s): {null_cols}.")
-
-    preds = np.argmax(sim_matrix, axis=1)
-    
-    # Map index predictions back to taxonomy metadata
-    target_rows = meta_aligned.iloc[targets].to_dict("records")
-    pred_rows = meta_aligned.iloc[preds].to_dict("records")
+    for i, (t_row, p_row) in enumerate(zip(target_rows, pred_rows)):
+        # A missing/null taxonomy field would otherwise silently fall
+        # through every equality check below and get mis-classified as
+        # "Domain Collapse" regardless of the model's actual prediction.
+        missing_t = [c for c in required_cols if t_row.get(c) is None]
+        if missing_t:
+            raise ValueError(f"[!] target_rows[{i}] missing required taxonomy field(s): {missing_t}.")
 
     counts = {
         "Correct": 0,
@@ -128,13 +126,13 @@ def compute_hierarchical_breakdown(sim_matrix: np.ndarray, targets: np.ndarray, 
     total = len(target_rows)
 
     for target_row, pred_row in zip(target_rows, pred_rows):
-        if target_row["specific"] == pred_row["specific"]:
+        if target_row.get("specific") == pred_row.get("specific"):
             err = "Correct"
-        elif target_row["coordinate"] == pred_row["coordinate"]:
+        elif target_row.get("coordinate") == pred_row.get("coordinate"):
             err = "Coordinate Error"
-        elif target_row["superordinate"] == pred_row["superordinate"]:
+        elif target_row.get("superordinate") == pred_row.get("superordinate"):
             err = "Superordinate Error"
-        elif target_row["domain"] == pred_row["domain"]:
+        elif target_row.get("domain") == pred_row.get("domain"):
             err = "Domain Error"
         else:
             err = "Domain Collapse"
