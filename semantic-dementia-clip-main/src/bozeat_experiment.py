@@ -30,6 +30,8 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if PROJECT_ROOT not in sys.path:
     sys.path.append(PROJECT_ROOT)
 
+from src.joint_anchor import build_joint_anchor_queries
+
 
 def load_image_safely(img_path):
     """Attempts multi-path resolution to open image files reliably."""
@@ -61,6 +63,8 @@ def run_bozeat_experiment(
     pruning_levels: list[float],
     display_prompts: list[str] | None = None,
     display_pruning_levels: list[float] | None = None,
+    query_mode: str = "text",
+    joint_alpha: float = 0.5,
     output_dir: str | None = None,
 ) -> tuple[str, str]:
     """Runs Bozeat-style retrieval for `target_prompts` at every level in
@@ -68,6 +72,14 @@ def run_bozeat_experiment(
     query prompts and the retrieval candidate pool -- pass an evaluator
     already restricted to the curated subset (JointSpaceEvaluator(
     restrict_classes=CURATED_CLASSES)) for this to be fast and meaningful.
+
+    query_mode: "text" (default, original behavior) queries with the pure
+    text-prompt embedding for each concept. "joint" queries with a blend
+    of each concept's text embedding and the mean embedding of its own
+    images (src/joint_anchor.py) -- a more "amodal hub"-like integrated
+    representation, per Proposal Sec. 2.2's transmodal-hub framing, rather
+    than a purely linguistic one. joint_alpha controls the blend weight
+    (0.5 = equal weight; only used when query_mode="joint").
 
     display_prompts: the full retrieval CURVE covers every prompt in
     target_prompts (cheap regardless of count, since the candidate pool is
@@ -79,6 +91,8 @@ def run_bozeat_experiment(
 
     Returns (csv_path, image_grid_path).
     """
+    if query_mode not in ("text", "joint"):
+        raise ValueError("query_mode must be 'text' or 'joint'.")
     if output_dir is None:
         output_dir = os.path.join(PROJECT_ROOT, "data", "results", "bozeat_experiment")
     os.makedirs(output_dir, exist_ok=True)
@@ -95,6 +109,7 @@ def run_bozeat_experiment(
 
     spec_col = "specific" if "specific" in harness.valid_metadata.columns else "concept"
     tokens = clip.tokenize([p.lower() for p in target_prompts]).to(harness.device)
+    img_labels_all = harness.valid_metadata[spec_col].tolist()
 
     records = []  # one row per (prompt, pruning_level)
 
@@ -107,9 +122,15 @@ def run_bozeat_experiment(
         with torch.no_grad():
             text_feats = pruned_model.encode_text(tokens)
             text_feats = text_feats / text_feats.norm(dim=-1, keepdim=True)
-            visual_memory = harness._reindex_visual_memory(pruned_model)
+            visual_memory = harness._reindex_visual_memory(pruned_model).to(harness.device)
 
-            sim_matrix = text_feats @ visual_memory.to(harness.device).T
+            query_feats = text_feats
+            if query_mode == "joint":
+                query_feats = build_joint_anchor_queries(
+                    text_feats, target_prompts, visual_memory, img_labels_all, alpha=joint_alpha
+                )
+
+            sim_matrix = query_feats @ visual_memory.T
             best_scores, best_match_indices = torch.max(sim_matrix, dim=-1)
             best_match_indices = best_match_indices.cpu().numpy()
             best_scores = best_scores.cpu().numpy()
@@ -146,11 +167,14 @@ def run_bozeat_experiment(
 
 
 def _plot_retrieval_curve(results_df: pd.DataFrame, target_prompts: list[str], output_dir: str) -> str:
-    """Full-resolution (every pruning level) per-class retrieval accuracy
-    and mean confidence, plus the aggregate across all classes. Colors
-    use the same coordinate-group hue-family scheme as the tSNE plot
-    (src/curated_config.py::build_class_colors) so a class's color is
-    consistent across every figure in the pipeline.
+    """Full-resolution (every pruning level) mean retrieval accuracy and
+    mean confidence, plus per-class confidence lines. The per-class
+    ACCURACY lines (binary 0/1 per query, so necessarily a tangle of
+    sawtooth lines with no useful visual signal beyond what the mean
+    already shows) were dropped per explicit request -- the left panel
+    now shows the clean aggregate accuracy trend only. Confidence (right
+    panel) is a continuous value per class, so its per-class lines stay,
+    since those ARE individually readable and informative.
     """
     from src.curated_config import build_class_colors
     class_colors = build_class_colors()
@@ -163,17 +187,15 @@ def _plot_retrieval_curve(results_df: pd.DataFrame, target_prompts: list[str], o
     for prompt in target_prompts:
         color = class_colors.get(prompt, "#888888")
         sub = results_df[results_df["prompt"] == prompt].sort_values("pruning_level")
-        ax1.plot(sub["pruning_level"] * 100, sub["correct"].astype(float),
-                  color=color, alpha=0.6, linewidth=1.1)
         ax2.plot(sub["pruning_level"] * 100, sub["top1_similarity"],
                   color=color, alpha=0.6, linewidth=1.1, label=prompt)
 
-    ax1.plot(agg_acc.index * 100, agg_acc.values, color="black", linewidth=3, label="Mean (all classes)")
+    ax1.plot(agg_acc.index * 100, agg_acc.values, color="black", linewidth=2.5)
     ax2.plot(agg_conf.index * 100, agg_conf.values, color="black", linewidth=3, linestyle="--")
 
-    ax1.set_xlabel("Pruning Level (%)"); ax1.set_ylabel("Retrieval Correct (1/0)")
-    ax1.set_title("Bozeat Retrieval Accuracy per Class", fontsize=12, fontweight="bold")
-    ax1.legend(fontsize=8); ax1.grid(alpha=0.3)
+    ax1.set_xlabel("Pruning Level (%)"); ax1.set_ylabel("Mean Retrieval Accuracy")
+    ax1.set_title("Bozeat Mean Retrieval Accuracy", fontsize=12, fontweight="bold")
+    ax1.grid(alpha=0.3); ax1.set_ylim(-0.02, 1.02)
 
     ax2.set_xlabel("Pruning Level (%)"); ax2.set_ylabel("Top-1 Cosine Similarity")
     ax2.set_title("Retrieval Confidence per Class", fontsize=12, fontweight="bold")

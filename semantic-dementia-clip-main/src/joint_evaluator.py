@@ -17,6 +17,7 @@ from src.metrics import (
     compute_mrr,
     compute_entropy,
     compute_typicality_delta,
+    compute_hierarchical_breakdown,
 )
 
 
@@ -367,27 +368,6 @@ class JointSpaceEvaluator:
 
             spec_acc = correct_mask.float().mean().item()
 
-            coordinate_acc, super_acc = spec_acc, spec_acc
-            if (
-                "coordinate" in eval_meta.columns
-                and "superordinate" in eval_meta.columns
-            ):
-                coordinate_correct, super_correct = 0, 0
-                for i, pred_idx in enumerate(top1_preds):
-                    pred_c = unique_concepts[pred_idx.item()]
-                    pred_match = self.valid_metadata[
-                        self.valid_metadata[spec_col] == pred_c
-                    ]
-                    if not pred_match.empty:
-                        p_row = pred_match.iloc[0]
-                        t_row = eval_meta.iloc[i]
-                        if p_row.get("coordinate") == t_row.get("coordinate"):
-                            coordinate_correct += 1
-                        if p_row.get("superordinate") == t_row.get("superordinate"):
-                            super_correct += 1
-                coordinate_acc = coordinate_correct / len(eval_meta)
-                super_acc = super_correct / len(eval_meta)
-
             mrr = compute_mrr(sim_matrix_np, target_indices_np)
             entropy = compute_entropy(sim_matrix_np)
 
@@ -402,33 +382,33 @@ class JointSpaceEvaluator:
             top5_acc = top5_correct.float().mean().item()
             top10_acc = top10_correct.float().mean().item()
 
-            coord_err, super_err, domain_err, collapse_err = 0, 0, 0, 0
-            for i, is_corr in enumerate(correct_mask):
-                if not is_corr:
-                    pred_c = unique_concepts[top1_preds[i].item()]
-                    t_row = eval_meta.iloc[i]
+            # Shared cascading taxonomy classification (src/metrics.py
+            # compute_hierarchical_breakdown) -- previously this file had
+            # TWO separate hand-written copies of this same cascading
+            # logic (one computing coordinate_acc/super_acc, a second
+            # separately computing the four error counts), each re-doing
+            # its own O(n) pandas filter per image. Consolidated into one
+            # pass here, both to remove the duplication risk (editing one
+            # copy without the other) and the redundant filtering.
+            coordinate_acc, super_acc = spec_acc, spec_acc
+            coord_err = super_err = domain_err = collapse_err = 0
+            if "coordinate" in eval_meta.columns and "superordinate" in eval_meta.columns:
+                target_rows = eval_meta.to_dict("records")
+                pred_rows = []
+                for pred_idx in top1_preds:
+                    pred_c = unique_concepts[pred_idx.item()]
                     p_match = self.valid_metadata[self.valid_metadata[spec_col] == pred_c]
-                    if not p_match.empty:
-                        p_row = p_match.iloc[0]
-                        if (
-                            "coordinate" in t_row
-                            and p_row.get("coordinate") == t_row.get("coordinate")
-                        ):
-                            coord_err += 1
-                        elif (
-                            "superordinate" in t_row
-                            and p_row.get("superordinate") == t_row.get("superordinate")
-                        ):
-                            super_err += 1
-                        elif (
-                            "domain" in t_row
-                            and p_row.get("domain") == t_row.get("domain")
-                        ):
-                            domain_err += 1
-                        else:
-                            collapse_err += 1
-                    else:
-                        collapse_err += 1
+                    pred_rows.append(
+                        p_match.iloc[0].to_dict() if not p_match.empty
+                        else {"specific": None, "coordinate": None, "superordinate": None, "domain": None}
+                    )
+                breakdown = compute_hierarchical_breakdown(target_rows, pred_rows)
+                coordinate_acc = breakdown["top1_coordinate_acc"]
+                super_acc = breakdown["top1_super_acc"]
+                coord_err = breakdown["Coordinate Error"]
+                super_err = breakdown["Superordinate Error"]
+                domain_err = breakdown["Domain Error"]
+                collapse_err = breakdown["Domain Collapse"]
 
             row = {
                 "pruning_level": p_level,

@@ -19,7 +19,11 @@ def main(output_dir=None, pruning_levels=None, scenario="joint"):
     if output_dir is None:
         output_dir = os.path.join(PROJECT_ROOT, "data", "results")
     if pruning_levels is None:
-        pruning_levels = [0.0, 0.25, 0.50, 0.75]
+        # Densified in the 0-35% transition zone (where within-group
+        # collapse actually happens) with two checkpoints between 35-50%
+        # to see the handoff continue, per explicit request -- was
+        # [0.0, 0.25, 0.50, 0.75].
+        pruning_levels = [0.0, 0.10, 0.20, 0.30, 0.375, 0.475]
 
     print(f"[*] Pruning levels shown: {pruning_levels}")
 
