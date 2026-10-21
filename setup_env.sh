@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Environment setup for semantic-dementia-clip-main on mscluster.
+# Environment setup for Clip-SD on mscluster.
 # Run this from inside the repo directory: bash setup_env.sh
 set -uo pipefail
 
 echo "=================================================="
-echo " Environment Setup: semantic-dementia-clip-main"
+echo " Environment Setup: Clip-SD"
 echo "=================================================="
 
 # ---- Step 1: Try to find and load a Python module (best-effort) ----
